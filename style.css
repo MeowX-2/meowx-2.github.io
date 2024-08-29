@@ -96,6 +96,7 @@ h2 {
     overflow: hidden;
     
     border-radius: 10px;
+    padding: 5em;
     box-shadow: 0 0 10px #ac3b50;
 
     a:link{color:#900 ; text-decoration:none;font-family:monospace;}
