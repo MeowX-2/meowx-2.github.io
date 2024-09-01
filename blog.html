@@ -23,26 +23,46 @@
                 </ul>
             </nav>
         </div>
-        
+         <script>
+                function toggleMenu() {
+                    const menuIcon = document.querySelector('.menu-icon');
+                    menuIcon.classList.toggle('active');
+                    var element = document.getElementById('Menu');
+                    var currentHeight = parseInt(element.style.height);
+                    if (currentHeight === 40) {
+                         element.style.height = '115px';
+                    } else if (currentHeight === 115) { 
+                        element.style.height = '40px'
+                    }
+                }
+            </script>
    </header>
+  <div class="container">
+            <div class="tags">
 
+                    <a href="#" class="tag" data-tag="personal">Personal</a>
+                <a href="#" class="tag" data-tag="math">Math</a>
+            </div>
     <section id="blog" class="section-blog">
         <div class="container">
             <h2>Blog</h2>
-     <div class="blog-post">
+
+     <div class="blog-post" data-tags="personal">
           <h3><a href="files/hsc.html">So HSC is over :thinking:</a></h3>
-                <p>Oct 5 2023</p>
+            <div class="blog-type">Personal</div>
                 <p>
-            This is gonna be a short post, I'll just recap my 11th 12th grade. <a href=files/hsc.html> See more...</a>
+            This is gonna be a short post, I'll just recap my 11th 12th grade. <a href="files/hsc.html"> Continue Reading...</a>
                 </p>
+
+                <p class="date">Oct 5 2023</p>
             </div>
  
 
-            <div class="blog-post">
+            <div class="blog-post" data-tags="personal">
           <h3><a href="files/reflection.html">Reflection</a></h3>
-                <p>May 16 2023</p>
                 <p>
-                    I am to write about the most significant period of my life; my Math Olympiad Journey has had a lot of ups and downs. I never thought I would be interviewed in big TV channels or newspapers. But it changed my life for the better. And I'm writing it out of gratitude. <a href="files/reflection.html">See more...</a>
+                    I am to write about the most significant period of my life; my Math Olympiad Journey has had a lot of ups and downs. I never thought I would be interviewed in big TV channels or newspapers. But it changed my life for the better. And I'm writing it out of gratitude. <a href="files/reflection.html">Continue Reading...</a>
+                <p class="date">May 16 2023</p>
                                 </div>
 
             <!-- Add more blog posts as needed -->
@@ -50,6 +70,6 @@
         </div>
     </section>
 
-
+  <script src="script.js"></script>
 </body>
 </html>

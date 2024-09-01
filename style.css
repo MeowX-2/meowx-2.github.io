@@ -1,7 +1,7 @@
 body {
-  font-family:sans-serif;
-  background:#fff;
-    color: #333;
+  font-family:monserrat, sans-serif;
+  background:#E6E5FA;
+    color: #000;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -17,23 +17,20 @@ ul{
     list-style-position:outside;
 } 
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
   justify-content: space-between;
 }
 
 header {
-    background-color: #000;
-    color: #fff;
+    background-color:#25283d;
+    color:#FBFBFF ;
     padding: 1em 0;
     padding-left: 2em;
     a:link{border-radius:5px;
   text-decoration-thickness:50%;
-    color:#fff; text-decoration:none;display-decoration:inline-block;padding: 0.5em ;background-color:#0E6C9C;font-weight:bold;}
-    a:visited{border-radius:5px; font-weight:bold;
-  text-decoration-thickness:50%;
-    color:#fff; text-decoration:none;display-decoration:inline-block;padding: 0.5em ;background-color:#0e6c9c;}
-
+    color:#fff; text-decoration:none;display-decoration:inline-block;padding: 0.5em ;background-color:#453F78;}
+    a:visited{border-radius:5px;     color:#fff; text-decoration:none;display-decoration:inline-block;padding: 0.5em ;}
     a:hover{color:#fff;text-shadow:#fff;text-radius:30px;font-size:100%;}
 
 }
@@ -45,9 +42,24 @@ header {
     overflow: hidden;
   padding-up:10px;
   padding:30px;
-   background:#fff; 
+  color: #25283D;
+   background:#fbfbff; 
+  border-color:blue;
     border-radius: 10px;
-    box-shadow: 0 0 10px #47f9ff;
+    box-shadow: 0 0 3px #6e738d;
+  ul{
+    list-style:disc;
+    padding-left:2em;
+    }
+}
+ .blog-post-ex{
+    margin-bottom: 40px;
+    overflow: hidden;
+  padding-up:10px;
+  padding:30px;
+   background:#fbfbff; 
+    border-radius: 10px;
+    box-shadow: 0 0 5px #16195;
   ul{
     list-style:disc;
     padding-left:2em;
@@ -55,7 +67,8 @@ header {
 }
 .blog-post:hover{
   transform: translateY(-3px);
-    box-shadow: 0 8px 12px #0e6c9c; 
+      box-shadow: 0 8px 12px #161925;
+   
 }
 nav li {
     display: inline;
@@ -64,27 +77,25 @@ nav li {
 }
 
 section {
-    background:#fff; 
-    padding: 40px 0;
+    padding: 0px 0;
 }
 
 .section-about {
-    background: #fff;
     padding-left: 2em;
     padding-right: 2em;
 }
 
 .section-blog {
-    background: #fff;
     color: #080505;
     padding-left: 2em;
+  padding-up:1em
     padding-right: 2em;
 }
 
 h2 {
-  color:#010D13;
-    border-bottom: 2px solid #430;
-    padding-bottom: 10px;
+    color:#2c363f;
+    border-bottom: 1px solid #0081a7;
+    padding-bottom: 5px;
     margin-bottom: 20px;
 }
 
@@ -99,7 +110,61 @@ img {
 
 h3 {
     margin-top: 0;
-  a:link{color:#000;text-decoration:none;font-family:sans-serif;font-weight:bold;}
-  a:visited{color:#000;text-decoration:none;font-family:sans-serif;font-weight:bold;}
+  a:link{color:#312D6D;text-decoration:none;font-family:sans-serif;font-weight:bold;}
+  a:visited{color:#312D6D;text-decoration:none;font-family:sans-serif;font-weight:bold;}
+}
+a{
+  text-decoration:none;
+}
+/*----tags---------------------------------------*/
+.tag {
+    padding: 1em 1em;
+    background-color: #995FA3;
+    color: #fff;
+    border-radius: 15px;
+    margin-right: 10px;
+  margin-bottom:0px;
+    margin-top:10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.tags {
+    margin-bottom: 20px;
+  font-family:monserrat, sans-serif;
+  margin-left: 2em;
+  margin-top:2em;
+}
+.data-tags {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  font-family: monserrat,sans-serif;
+    margin-top: 2em;
+}
+.date {
+    font-size: 11px;
+  padding-bottom:5px;
+    font-style: italic;
+    font-family:monserrat,sans-serif ;
+    margin-left: auto;
+}
+.tags .tag {
+    background-color: #995fa3;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 10px;
+    margin-right: 5px;
+    display: inline-block;
+    font-size: 12px;
+  font-family:monospace,sans-serif;
 }
 
+.blog-type {
+    background-color: #995fa3;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 10px;
+    display: inline-block;
+  font-family:monospace, sans-serif;
+    font-size: 12px;
+}
