@@ -118,21 +118,21 @@ a{
 }
 /*----tags---------------------------------------*/
 .tag {
-    padding: 1em 1em;
+    padding: 0em 0em;
     background-color: #995FA3;
     color: #fff;
     border-radius: 15px;
     margin-right: 10px;
   margin-bottom:0px;
-    margin-top:10px;
+    margin-top:0px;
     text-decoration: none;
     cursor: pointer;
 }
 .tags {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   font-family:monserrat, sans-serif;
-  margin-left: 2em;
-  margin-top:2em;
+  margin-left: 0em;
+  margin-top:1em;
 }
 .data-tags {
     display: flex;
