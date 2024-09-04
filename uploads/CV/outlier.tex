@@ -1,0 +1,233 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+  \item{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Arifa Alam} \\ \vspace{1pt}
+    Dhaka, Bangladesh \\ \vspace{1pt}
+    \small \raisebox{-0.1\height} ~ \href{mailto:alamarifa9@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{alamarifa9@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/meowx/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/meowx/}}  ~
+    \href{https://github.com/MeowX-2}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/MeowX-2}} ~ \href{https://meowx-2.github.io/}{\faGlobe\ \underline{meowx-2.github.io}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Tikatuli Kamrunnesa Govt. Girls' High School}{ }
+      {High School}{Dhaka, Bangladesh}
+    
+  \resumeSubHeadingListEnd
+
+   \resumeSubheading
+   {Saint Francis Xavier's Girls' School \& College}{ }
+      {High School}{Dhaka, Bangladesh}
+    
+  \resumeSubHeadingListEnd
+
+%-----------INVOLVEMENT---------------
+\section{Achievements}
+    \resumeSubHeadingListStart
+            \resumeItemListStart
+            \resumeItem{\textbf{European Girls' Mathematical Olympiad (EGMO):} Bronze medal in 2023; honorable mention in 2022; contestant in 2021}
+            \resumeItem{\textbf{Bangladesh Mathematical Olympiad(BdMO):} IMO Camp Participant 2023; Team Selection Test Participant 2022-2023; National Camp Participant 2021-2023}
+            \resumeItem{\textbf{Bangladesh Olympiad in Informatics (BdOI):} Qualified for the National Round in 2023}
+            \resumeItem{\textbf{Bigganchinta:} Best Volunteer Award in 2019}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+ %
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Bengali(Native), English(Proficient)} \\
+     \textbf{Technologies}{: Linux(EndeavorOS), NeoVim, GitHub, CSS, HTML, \LaTeX, Touch Typing (80 wpm) } \\
+    }}
+ \end{itemize} 
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Gonitzoggo | Academic Team }{September 2023 -- Present}
+      {Member }{Remote}
+      \resumeItemListStart
+        \resumeItem{Mentored 200+ students throughout the course}
+        \resumeItem{Mentored 50+ female math contestants exclusively}
+        \resumeItem{Written notes and problemsets in both Bengali and English with \LaTeX}
+      \resumeItemListEnd
+  
+    \resumeSubheading
+      {Gonitzoggo | Contest}{March 2024 -- Current}
+      {Coordinator}{Remote}
+      \resumeItemListStart
+      \resumeItem{Managed and finalized problems for the Calibration Rounds}
+      \resumeItemListEnd
+
+    \resumeSubheading
+    {TEMS (Truthful Enlightened Mathematical Soul) | Academic Team }{December 2023 -- Current}
+      {Instructor, problem setter}{Dhaka, Bangladesh}
+      \resumeItemListStart
+        \resumeItem{Mentored 100+ students}
+        \resumeItem{Provided practice materials, problems sets; graded their answer papers}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {BRAC University | CSE422 }{May 2024 -- Current}
+      {Lecture Support Aid}{Dhaka, Bangladesh}
+      \resumeItemListStart
+        \resumeItem{Edited teaching materials with \LaTeX for the CSE422 (Artificial Intelligence) course, weekly; Course was conducted in English}
+      \resumeItemListEnd
+      
+   
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Voluntary Works}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+          {\textbf{Bangladesh Mathematical Olympiad (BDMO)} | Academic Team }{December 2023 -- Current}
+          {Trainer}{Bangladesh}
+          \resumeItemListStart
+            \resumeItem{Mentored 100+ students for Olympiad mathematics with Bengali and English resources}
+          \resumeItemListEnd
+        \resumeSubheading
+          {\textbf{Bangladesh Girls' Math Foundation (BGMF)}  | Academic Team}{August 2023 -- Current}
+          {Trainer}{Bangladesh}
+          \resumeItemListStart
+            \resumeItem{Mentored 30+ students for Olympiad mathematics with Bengali and English resources}
+          \resumeItemListEnd
+    
+        \resumeSubheading
+          {\textbf{USEMO} }{2020, 2021}
+          {Grader}{Remote}
+          \resumeItemListStart
+            \resumeItem{Hosted in America, graded over 200+ papers written in English }
+          \resumeItemListEnd
+
+        \resumeSubheading
+          {\textbf{Gonit School} | Academic  }{April 2023 -- Current}
+          {Writer}{Remote}
+          \resumeItemListStart
+            \resumeItem{Written various Bangla articles relating to Mathematics}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+\end{document}
+
