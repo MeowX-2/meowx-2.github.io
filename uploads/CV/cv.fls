@@ -1,4 +1,4 @@
-PWD /home/meowx2/Desktop/CV
+PWD /home/meowx2/Desktop/meowx-2.github.io/uploads/CV
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
 INPUT cv.tex
