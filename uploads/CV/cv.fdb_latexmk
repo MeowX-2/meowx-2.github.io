@@ -1,8 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1725780031.00235 "cv.tex" "cv.pdf" "cv" 1725780031.44462 2
-  "/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1716849630 2920 d63721872b8c77041b88e51b8f7c291d ""
-  "/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1716849630 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
-  "/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc" 1716849630 2906 e48aa7c95dea478a2e011bcb4f7878c9 ""
+["pdflatex"] 1725782256.98739 "cv.tex" "cv.pdf" "cv" 1725782261.86863 2
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1716849630 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1716849630 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1716849630 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -20,7 +17,6 @@
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1716849630 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
   "/usr/share/texmf-dist/fonts/tfm/public/fontawesome5/fa5brands0.tfm" 1716849630 1380 a61d7c2860b3f6d342213a6b9b229e9e ""
   "/usr/share/texmf-dist/fonts/tfm/public/fontawesome5/fa5free1solid.tfm" 1716849630 1316 1c2ee668ea88be9bd4f39690662cc344 ""
-  "/usr/share/texmf-dist/fonts/tfm/public/fontawesome5/fa5free2solid.tfm" 1716849630 1340 b21002f38a477f345fa9dc96a5613e2b ""
   "/usr/share/texmf-dist/fonts/tfm/public/latex-fonts/lasy10.tfm" 1716849630 520 82a3d37183f34b6eb363a161dfc002c2 ""
   "/usr/share/texmf-dist/fonts/tfm/public/latex-fonts/lasy5.tfm" 1716849630 520 d082ac03a1087bc1ec2a06e24a9f68c0 ""
   "/usr/share/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm" 1716849630 520 4889cce2180234b97cad636b6039c722 ""
@@ -34,8 +30,6 @@
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1716849630 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1716849630 32587 1788b0c1c5b39540c96f5e42ccd6dae8 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1716849630 37944 359e864bd06cde3b1cf57bb20757fb06 ""
-  "/usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb" 1716849630 204258 177851ae99767090543ae24e73c92f2f ""
-  "/usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb" 1716849630 295323 d099723373a00cc17d5ae0c9738bb5b3 ""
   "/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1716849630 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1716849630 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/usr/share/texmf-dist/tex/generic/babel-english/english.ldf" 1716849630 7008 9ff5fdcc865b01beca2b0fe4a46231d4 ""
@@ -71,7 +65,6 @@
   "/usr/share/texmf-dist/tex/latex/fontawesome5/fontawesome5.sty" 1716849630 8112 16dbb19fca3f2df864fea49874356f35 ""
   "/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands0.fd" 1716849630 1206 b35c804e364d46e802702be118632c48 ""
   "/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd" 1716849630 980 1b42613a5245ed252c04030af746d737 ""
-  "/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd" 1716849630 980 38ce61da47d1ba16e56a2e312b56a515 ""
   "/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1716849630 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
   "/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def" 1716849630 19448 1e988b341dda20961a6b931bcde55519 ""
   "/usr/share/texmf-dist/tex/latex/graphics/color.sty" 1716849630 7233 e46ce9241d2b2ca2a78155475fdd557a ""
@@ -103,9 +96,9 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1716849630 41588 b43d3e860a4f94167ee1e725ff526a72 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1724857379.57903 5307366 7c8b2c5f25a30f46e808245b8e6cf269 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1724857371 7113003 84eff53fbafd8c5d3793c675dc935193 ""
-  "cv.aux" 1725780031.38212 789 9211db768d4d5f7c8e2dc26bb58f0aeb "pdflatex"
-  "cv.out" 1725780031.38212 531 86a06c73b1449e1fce4fcdaf5e2a097a "pdflatex"
-  "cv.tex" 1725780029.50212 7776 9c00925e935fdfa65077c3a548336d68 ""
+  "cv.aux" 1725782261.80532 683 aa655e47bde8e613a06d683197360ba6 "pdflatex"
+  "cv.out" 1725782261.80532 443 a04196075b54ec8fdfe6bdde4ebe0538 "pdflatex"
+  "cv.tex" 1725781650.89777 7755 7050aae969fe39880f68625a31d95e7c ""
   (generated)
   "cv.aux"
   "cv.log"
