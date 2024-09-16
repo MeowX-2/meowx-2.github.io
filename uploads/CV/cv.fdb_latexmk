@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1725782937.3198 "cv.tex" "cv.pdf" "cv" 1725782937.75443 2
+["pdflatex"] 1726473915.07564 "cv.tex" "cv.pdf" "cv" 1726473915.50955 2
   "/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1716849630 2920 d63721872b8c77041b88e51b8f7c291d ""
   "/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1716849630 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1716849630 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -100,9 +100,9 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1716849630 41588 b43d3e860a4f94167ee1e725ff526a72 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1724857379.57903 5307366 7c8b2c5f25a30f46e808245b8e6cf269 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1724857371 7113003 84eff53fbafd8c5d3793c675dc935193 ""
-  "cv.aux" 1725782937.69295 789 9211db768d4d5f7c8e2dc26bb58f0aeb "pdflatex"
-  "cv.out" 1725782937.69628 531 86a06c73b1449e1fce4fcdaf5e2a097a "pdflatex"
-  "cv.tex" 1725782936.01628 7734 b803fdfe5b9ab7588d36d0d50c8cc434 ""
+  "cv.aux" 1726473915.44944 789 9211db768d4d5f7c8e2dc26bb58f0aeb "pdflatex"
+  "cv.out" 1726473915.44944 531 86a06c73b1449e1fce4fcdaf5e2a097a "pdflatex"
+  "cv.tex" 1726473911.15945 7157 0cf6171b3fc2990a120069e48369ce59 ""
   (generated)
   "cv.aux"
   "cv.log"
