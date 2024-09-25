@@ -1,0 +1,5 @@
+uploads/CV/*.log 
+uploads/CV/*.fdb_latexmk
+uploads/CV/*.tex 
+uploads/CV/*.aux
+uploads/CV/*.out
