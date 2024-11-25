@@ -12,6 +12,9 @@ uploads/*.out
 uploads/outlier.*
 uploads/groupt/*.log 
 uploads/groupt/*.fdb_latexmk
+uploads/groupt/*.pre
+uploads/groupt/*.synctex.gz
+uploads/groupt/*.fls
 uploads/groupt/*.tex 
 uploads/groupt/*.aux
 uploads/groupt/*.out
