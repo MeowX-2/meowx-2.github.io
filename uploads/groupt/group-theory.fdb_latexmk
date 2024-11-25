@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1732535198.26995 "group-theory.tex" "group-theory.pdf" "group-theory" 1732535199.58494 0
+["pdflatex"] 1732541590.61605 "group-theory.tex" "group-theory.pdf" "group-theory" 1732541591.95326 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1727349926 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1727349926 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1727349926 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -246,9 +246,9 @@
   "/usr/share/texmf/tex/latex/asymptote/asymptote.sty" 1731603648 9836 ef83d0c83cb4d644a8142eca52e46963 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1731316454.1996 5307366 7c8b2c5f25a30f46e808245b8e6cf269 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1731316446 7113023 24db82bdad40a2497c13d4d13452a2d3 ""
-  "group-theory.aux" 1732535199.49847 504 349b5809cd1e97e1c3f7d95757a7efef "pdflatex"
-  "group-theory.out" 1732535199.3618 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "group-theory.pre" 1732535199.1318 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "group-theory.aux" 1732541591.85449 504 349b5809cd1e97e1c3f7d95757a7efef "pdflatex"
+  "group-theory.out" 1732541591.71449 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "group-theory.pre" 1732541591.48782 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "group-theory.tex" 1732535137.45872 7404 bfb94e0eb40bd46a140c87b7ec45c8c3 ""
   (generated)
   "group-theory.aux"
