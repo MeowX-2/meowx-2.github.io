@@ -1,0 +1,176 @@
+\documentclass{scrartcl}
+\title{Group Theory}
+\author{Arifa Alam}
+\usepackage{tikz, amsmath,amsthm,amssymb}
+\usepackage[most]{tcolorbox}
+\usepackage[T1]{fontenc}
+\usepackage{breqn}
+\usepackage{xcolor}
+\usepackage{ragged2e}
+\usepackage{footnotehyper}
+\usepackage{blindtext}
+\usepackage{adjustbox}
+\usepackage{fncychap}
+\usepackage{fancyhdr}
+\usepackage[inline]{asymptote}
+\allowdisplaybreaks
+\tcbuselibrary{theorems}
+\usepackage[bottom]{footmisc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{thmtools}
+\declaretheoremstyle[
+headfont=\color{myblue}\normalfont\bfseries\textbf,
+bodyfont=\color{black}\normalfont,
+]{colored}
+\declaretheorem[
+style=colored,
+name=Problem, numberwithin=section
+]{prb}
+%options: Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, Bjornstrup%
+
+\hypersetup{
+      colorlinks=true,
+      citecolor=black,
+      filecolor=black,
+      linkcolor=black,
+      urlcolor=BlueViolet
+}
+\definecolor{RoaylBlue}{HTML}{0071BC}
+\definecolor{myblue}{HTML}{012169}
+\definecolor{SeaGreen}{HTML}{3FBC9D}
+\definecolor{SkyBlue}{HTML}{46C5DD}
+\definecolor{BlueViolet}{HTML}{473992}
+\definecolor{Cerulean}{HTML}{00A2E3}
+\definecolor{NordBlack}{HTML}{2E3440}
+\definecolor{myred}{HTML}{8B0000}
+
+ % linktocpage,
+ \newcommand{\Proof}{\textcolor{RoaylBlue!60!black}{\textbf{    Proof---\\}}}
+\renewcommand{\qedsymbol}{$\square$}
+\renewcommand\thefootnote
+  {\begingroup{\arabic{footnote}}\endgroup}
+  \renewcommand{\labelenumii}{\textbf{\Alph{\arabic{enumi}.\arabic{enumii}}}}
+  \renewcommand{\labelenumiii}{\textbf{\Alph{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}}}}
+  \renewcommand{\labelenumiv}{\textbf{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}.\arabic{enumiv}}}
+  \renewcommand{\labelenumi}{\textbf{\Alph{enumi}}}
+%BOXES========================================%
+\newtcolorbox{solu}{enhanced,colback=white,breakable, boxrule=0pt,arc=0pt,frame hidden, borderline west={0.4mm}{0mm}{white}}
+
+\newtcolorbox{solun}{enhanced,colback=Cerulean!5!white,breakable, boxrule=0pt,arc=0pt,frame hidden, borderline west={0.8mm}{0mm}{Cerulean}}
+
+
+
+\newtcbtheorem[number within=section]{col}{Collorary}
+{enhanced,breakable,colback=brown!5!white,boxrule=0pt,colbacktitle=brown!30!white,fonttitle=\bfseries, description font = \normalfont, titlerule = 0mm, coltitle= black, arc=0pt,frame hidden,borderline west={1mm}{0mm}{brown} }{th}{}{}
+
+\newtcbtheorem[number within=section]{lemma}{Lemma}
+{enhanced,colback=white!10!white,boxrule=0pt, colframe=white!5!white,breakable,fonttitle=\bfseries,description font=\bfseries,titlerule=0mm, colbacktitle=white!10!white,title=#1,coltitle=black,arc=0pt, borderline west={.5mm}{0mm}{green!50!black}}{th}{}
+
+\newtcbtheorem[number within=section]{definition}{Definition}
+{enhanced,colback=white!5!white,boxrule=0pt, colframe=white!5!white,breakable,fonttitle=\bfseries,description font=\bfseries,titlerule=0mm, colbacktitle=white!5!white,title=#1,coltitle=myred!50!black,arc=0pt, borderline west={.5mm}{0mm}{myred!60!black}}{th}{}
+
+\newtcbtheorem[number within=section]{them}{Theorem}
+{enhanced,colback=SkyBlue!20!white,boxrule=0.2pt, fonttitle=\bfseries,description font=\normalfont, breakable, titlerule=0.1mm, colbacktitle=SkyBlue!80!white,title=#1,coltitle=black,arc=8pt,colframe=black} {th}{}
+
+\newtcbtheorem[number within=section]{thm}{Theorem}
+{enhanced,colback=white!20!white,boxrule=0.2pt, fonttitle=\bfseries,description font=\bfseries, breakable, titlerule=0.1mm, colbacktitle=white!80!white,title=#1,coltitle=SkyBlue!50!black,arc=8pt,colframe=white,borderline west ={.5mm}{0mm}{SkyBlue}}{th}{}
+\newtcbtheorem[number within=section]{example}{Example }
+{enhanced,colback=white!10!white,boxrule=0pt, colframe=white!5!white,fonttitle=\bfseries,description font=\normalfont, breakable,titlerule=0mm, colbacktitle=white!10!white,title=#1,coltitle=SeaGreen!70!black,arc=0pt, borderline west={.5mm}{0mm}{SeaGreen}}{th}{}{}
+
+\newtcbtheorem{remarks}{Remarks}
+{enhanced,colback=white,boxrule=0pt, colframe=white,breakable,fonttitle=\bfseries,description font=\bfseries,titlerule=0mm, colbacktitle=white,title=#1,coltitle=NordBlack,arc=0pt, borderline west={1mm}{0mm}{NordBlack!50!black}}{th}{}
+
+
+\newenvironment{lemmabox}[1][]{
+    \begin{exm}[#1]
+
+ }{
+
+   \end{exm}
+}
+\newenvironment{claim}{
+    \begin{solun}
+    \textcolor{RoaylBlue!60!black}{\textbf{Claim---}}
+ }{
+
+   \end{solun}
+}
+
+\newenvironment{solve}{
+  \begin{solu}
+    \textcolor{black}{\textit{Proof.}}
+ }{
+
+   \end{solu}
+}
+\usepackage{thmtools}
+\declaretheoremstyle[
+%headfont=\color{blue!50!black}\normalfont\bfseries\textbf,
+%bodyfont=\color{black}\normalfont,
+]{colored}
+\declaretheorem[
+style=colored,
+name=Problem,
+]{pr}
+
+\begin{document}
+
+\fontfamily{cmss}\selectfont
+\maketitle
+\section{Basics}
+Laws of compositions:
+\begin{itemize}
+	\item \textbf{Associative Law}: $(ab)c = a(bc)$
+	\item \textbf{Commutative Law}: $ab = ba$
+\end{itemize}
+
+These two laws shown using the product operation. However, a group may have other operation such as addition.
+
+Let $g \circ  f$ denote as the composition of two functions $g$ and $f$. Then for functions $g$, $f$, and $h$ the associativity holds but comutativity necessearly doesn't (take matrix multiplication, for example). In other words--
+\[(g \circ f) \circ h = g \circ (f \circ h)\]
+Identity of law of compostions is defined as--
+\[ae = ea = a\]
+(and yes, $a = e$)
+\begin{definition}{Groups}{}
+	A group is a set $G$ which should satisfy these following properties--
+	\begin{itemize}
+		\item Associative for every element in $G$.
+		\item Exist identity element, unique.
+		\item Exist inverse for all element in $G$.
+	\end{itemize}
+\end{definition}
+A group is \textit{abelian} if its law of compostion is commutative. Such as $\mathbb{Z^+}, \mathbb{R^+, R^\times, C^+, C^\times}$ The $\times $ and $+$ signs are defining the operations, not the set.
+
+\textit{Order} of a group is defined as its cardinality, $|G|$.
+\begin{thm}{Cancellation Law}{}
+	Let $a$, $b$, and $c$ be elements of $G$ whose law of composition is written multiplicatively. If $ab = ac$ or $ba = ca$ then $b= c$. And if $ab = a$ and $ba = a$ then $b = 1$.
+\end{thm}
+\begin{solve}
+	Just multiply with $a^{-1}$ in both left and right side of the term. \qed
+\end{solve}
+\begin{definition}{Subgroup}{}
+	A subset $H$ of a group $G$ must have the following properties:
+	\begin{itemize}
+		\item \textit{Closure}: If $a\in H \implies ab \in H$.
+		\item \textit{Identity}: $1 \in H$
+		\item \textit{Inverse}: $a \in H \implies a^{-1} \in H$
+	\end{itemize}
+\end{definition}
+
+A subgroup is proper subgroup if it's not trivial subgroup. And they are--
+\begin{itemize}
+	\item The group itself
+	\item The subgroup only with identity
+\end{itemize}
+
+Some examples of subgroup are--
+\begin{itemize}
+	\item \textit{circle group}: Let group $G = \mathbb{C}$ for which absolute value of every element in $\mathbb{C}$ is equals to $1$. The unit circle of the plane is the subgroup of $G$, which is the circle group.
+	\item \textit{special linear group}: $G $ is the set of $ n \times n$ matrices. Matrices with determinant 1 are subgroup of $G$, which is a special linear group also known as $SL_n$. And $G$ is known as \textit{general linear group} $GL_n$
+
+\end{itemize}
+\begin{thm}{}{}
+	Let $S$ be a subgraoup of the additive group of $\mathbb{Z^+}$. Either $S$ is the trivial subgroup {0}, or else it has to be in the form $\mathbb{Z}a$, where $a$ is the smallest positive integer in $S$.
+\end{thm}
+\end{document}
+
