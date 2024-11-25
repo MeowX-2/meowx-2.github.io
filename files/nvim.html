@@ -39,48 +39,41 @@
       </p>
       <div class="blog-post-ex">
         <p>
-          So,those who knows me closely knows I stan for
-          <code>NeoVim</code>. I won’t blabber around neovim too much like a
-          weirdo (spoiler: I will). I am mainly writing the functionality of
-          some configs which I may forget (another reason is to flex, but
-          that’s unrelated). These are available on
-          <a href="https://github.com/meowx-2">GitHub</a>
-          <b>TODO— add the repo</b> . My configs are heavily
+          So,those who know me closely knows I stan for
+          <code>NeoVim</code>. I won't blabber around NeoVim too much like a weirdo (spoiler: I will). I am mainly writing about the functionality of some configs, which I may forget (another reason is to flex, but that's unrelated). These are available on          <a href="https://github.com/meowx-2">GitHub</a>. My configs are heavily
           influenced by
           <a href="https://www.youtube.com/playlist?list=PLsz00TDipIffreIaUNk64KxTIkQaGguqn">this</a>
-          playlist (and some google/reddit/github searching as per my need).
-          I mostly use it for writing codes for the blog, and $\LaTeX$ notes
-          and occassional rant thanks to
+          playlist (and some Google/Reddit/Github searching as needed).
+              I mostly use it for writing codes for the blog, <code>Latex</code> notes,
+          and occassional rants, thanks to
           <a href="https://github.com/nvim-neorg/neorg">neorg</a>.
         </p>
-        <p><b>TODO— screenshot</b></p>
+            <img src="../uploads/nvim-1.jpg"/>
+        <p></p>
         <h3>Basics & Things That I Find Cool</h3>
         <p>
-          <b>Theme–</b>
+          <b>Theme</b> -
           <a href="https://github.com/f4z3r/gruvbox-material.nvim">Gruvbox material</a><br />
-          <b>Fonts–</b>
+          <b>Fonts</b> -
           <a href="https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip">JetBrains Mono Nerd Font</a>. Note that using a nerd-font in the terminal is mandatory as it is optimized to be used with icons.<br>
-          <b>Statusbar–</b> Basically the bar at the bottom the one I am
+          <b>Statusbar</b> - Basically the bar at the bottom the one I am
           using is
           <a href="https://github.com/nvim-lualine/lualine.nvim">lualine</a>.<br >
-          <b>File-explorer–</b>
+          <b>File explorer</b> - 
           <a href="https://github.com/nvim-tree/nvim-tree.lua">nvim-tree</a>. However,
           <a href="https://github.com/nvim-neo-tree/neo-tree.nvim">neo-tree</a>
           is popular too.<br>
-          <b>Syntax-highlighting–</b> Treesitter.<br />
-          <b>Completions–</b> Mason with LSP servers, and some
-          custom ones.
+          <b>Syntax highlighting</b> - Treesitter.<br />
+          <b>Completions</b> - Mason with LSP servers, and some
+          custom snippets for TeX, C++, HTML/CSS.
         </p>
         <h3 id="vimtex">VimTeX</h3>
         <p>
-          Basically <code>LaTex</code> setup with nvim with zathura as the
-          pdf viewer. Zathura is minimal, more importantly it supports
-          SyncTeX: You can click a certain line in the pdf and that will
-          take you to the line corresponding to the <code>.tex</code> file.
-        </p>
+          As I need to write a lot of stuff in <code> Latex</code>, it's been a life-saver. <code>Latex</code> setup with NeoVim as a text editor and Zathura as the
+          PDF viewer is a perfect marriage. Zathura is minimal, more importantly, it supports <code>SyncTeX</code>: You can click a particular line in the PDF, which will take you to the line corresponding to the <code>.tex</code> file.        </p>
         <blockquote>
           <p>
-            Note— It’s also important to install both
+            Note: It’s also important to install both the 
             <code>zathura</code> and
             <code>zathura-pdf-poppler</code> plugin.
           </p>
@@ -93,19 +86,15 @@
         </div>
 
         <p>
-          The code below sets up the default pdf viewer for VimTeX in
+          The code below sets up the default PDF viewer for VimTeX in
           NeoVim. Add these in <code>~/.config/nvim/init.lua</code>–
         </p>
             <div class="code-container">
         <pre><code>vim.g.vimtex_view_method = 'zathura'<br>vim.g.latex_view_general_viewer = 'zathura'<br>vim.g.vimtex_compiler_progname = 'nvr'</code></pre></div>
 
         <p>
-          There are some custom $\LaTeX$ snippets
-          <a href="**todo**">here<b>TODO</b></a> made with
-              <a href="https://github.com/L3MON4D3/LuaSnip">luasnip</a>  thanks to <a href="https://github.com/nafis277">@nafis277</a> for making these snippets. 
+              <a href="https://github.com/MeowX-2/nvim/tree/main/snippets/tex">Here</a>  are custom <code>Latex</code> snippets of my template, which suit Neovim.  Thanks to <a href="https://github.com/nafis277">@nafis277</a> for creating these snippets. 
         </p>
-            <h3>Neo-org</h3>
-            It's a 
       </div>
     </div>
   </section>

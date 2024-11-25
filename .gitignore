@@ -3,3 +3,10 @@ uploads/CV/*.fdb_latexmk
 uploads/CV/*.tex 
 uploads/CV/*.aux
 uploads/CV/*.out
+uploads/CV/outlier.*
+uploads/*.log 
+uploads/*.fdb_latexmk
+uploads/*.tex 
+uploads/*.aux
+uploads/*.out
+uploads/outlier.*

@@ -150,7 +150,7 @@ nav li {
 }
 
 section {
-  padding: 2em;
+  padding: 1em;
 }
 
 meow {
@@ -198,7 +198,7 @@ img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 8px 8px 0 0;
+  border-radius: 8px 8px 8px 8px;
 }
 
 
