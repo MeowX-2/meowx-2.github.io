@@ -10,3 +10,8 @@ uploads/*.tex
 uploads/*.aux
 uploads/*.out
 uploads/outlier.*
+uploads/groupt/*.log 
+uploads/groupt/*.fdb_latexmk
+uploads/groupt/*.tex 
+uploads/groupt/*.aux
+uploads/groupt/*.out
