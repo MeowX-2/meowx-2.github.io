@@ -144,10 +144,10 @@ INPUT ./cv.out
 INPUT ./cv.out
 INPUT cv.out
 INPUT cv.out
-OUTPUT cv.pdf
 INPUT ./cv.out
 INPUT ./cv.out
 OUTPUT cv.out
+OUTPUT cv.pdf
 INPUT /opt/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /opt/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT /opt/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd

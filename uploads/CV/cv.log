@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.12)  21 JAN 2025 18:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.12)  25 APR 2025 20:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -321,24 +321,24 @@ Package: multicol 2024/09/14 v1.9i multicolumn formatting (FMi)
 ) (/opt/texlive/2024/texmf-dist/tex/generic/pdftex/glyphtounicode.tex) (./cv.aux)
 \openout1 = `cv.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
  (/opt/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count298
@@ -353,57 +353,57 @@ LaTeX Font Info:    ... okay on input line 119.
 \makeMPintoPDFobject=\count303
 \everyMPtoPDFconversion=\toks27
 )
-Package hyperref Info: Link coloring OFF on input line 119.
+Package hyperref Info: Link coloring OFF on input line 117.
  (./cv.out) (./cv.out)
 \@outlinefile=\write3
 \openout3 = `cv.out'.
 
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on input line 130.
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on input line 128.
  (/opt/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd)
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 130.
+(Font)              <7> on input line 128.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 130.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 130.
+(Font)              <5> on input line 128.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 128.
  (/opt/texlive/2024/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on input line 131.
+LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on input line 129.
  (/opt/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands0.fd)
 LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <10> not available
-(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead on input line 131.
+(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead on input line 129.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
-(Font)              using `OT1/cmr/bx/n' instead on input line 137.
+(Font)              using `OT1/cmr/bx/n' instead on input line 135.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 141.
+(Font)              <10.95> on input line 139.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 141.
+(Font)              <8> on input line 139.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 141.
+(Font)              <6> on input line 139.
 
-./cv.tex:147: LaTeX Error: Lonely \item--perhaps a missing list environment.
+./cv.tex:145: LaTeX Error: Lonely \item--perhaps a missing list environment.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.147 {High School}{Dhaka, Bangladesh}
+l.145 {High School}{Dhaka, Bangladesh}
                                       
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) detected at line 147
+Underfull \hbox (badness 10000) detected at line 145
 [][]
  []
 
-./cv.tex:149: Undefined control sequence.
+./cv.tex:147: Undefined control sequence.
 \enit@enditemize ->\enit@after 
                                \endlist \ifx \enit@series \relax \else \ifnu...
-l.149 \resumeSubHeadingListEnd
+l.147 \resumeSubHeadingListEnd
                               
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -411,10 +411,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./cv.tex:149: Undefined control sequence.
+./cv.tex:147: Undefined control sequence.
 \enit@enditemize ...x \else \ifnum \enit@resuming 
                                                   =\@ne \enit@setresumekeys ...
-l.149 \resumeSubHeadingListEnd
+l.147 \resumeSubHeadingListEnd
                               
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -422,19 +422,19 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./cv.tex:149: Missing number, treated as zero.
+./cv.tex:147: Missing number, treated as zero.
 <to be read again> 
                    =
-l.149 \resumeSubHeadingListEnd
+l.147 \resumeSubHeadingListEnd
                               
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-./cv.tex:149: Undefined control sequence.
+./cv.tex:147: Undefined control sequence.
 \enit@setresumekeys ...xpandafter {\enit@savekeys 
                                                   }\xdef \enit@afterlist {#2...
-l.149 \resumeSubHeadingListEnd
+l.147 \resumeSubHeadingListEnd
                               
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -442,10 +442,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./cv.tex:149: Undefined control sequence.
+./cv.tex:147: Undefined control sequence.
 \enit@setresumekeys ...it@toks }\ifnum \enit@type 
                                                   =\z@ #3\def \enit@noexcs {...
-l.149 \resumeSubHeadingListEnd
+l.147 \resumeSubHeadingListEnd
                               
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -453,19 +453,19 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./cv.tex:149: Missing number, treated as zero.
+./cv.tex:147: Missing number, treated as zero.
 <to be read again> 
                    =
-l.149 \resumeSubHeadingListEnd
+l.147 \resumeSubHeadingListEnd
                               
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-./cv.tex:149: Undefined control sequence.
+./cv.tex:147: Undefined control sequence.
 <argument> enit@resume@series@\enit@series 
                                            
-l.149 \resumeSubHeadingListEnd
+l.147 \resumeSubHeadingListEnd
                               
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -473,10 +473,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./cv.tex:149: Undefined control sequence.
+./cv.tex:147: Undefined control sequence.
 \enit@setresumekeys ...me@#1}{\csname c@\@listctr 
                                                   \endcsname \the \csname c@...
-l.149 \resumeSubHeadingListEnd
+l.147 \resumeSubHeadingListEnd
                               
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -484,10 +484,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./cv.tex:149: Undefined control sequence.
+./cv.tex:147: Undefined control sequence.
 \enit@setresumekeys ...e \the \csname c@\@listctr 
                                                   \endcsname }\fi }
-l.149 \resumeSubHeadingListEnd
+l.147 \resumeSubHeadingListEnd
                               
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -495,17 +495,17 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./cv.tex:149: You can't use `\relax' after \the.
+./cv.tex:147: You can't use `\relax' after \the.
 <recently read> \c@ 
                     
-l.149 \resumeSubHeadingListEnd
+l.147 \resumeSubHeadingListEnd
                               
 I'm forgetting what you said and using zero instead.
 
-./cv.tex:149: Undefined control sequence.
+./cv.tex:147: Undefined control sequence.
 \enit@enditemize ...ist \fi \ifnum \enit@resuming 
                                                   =\thr@@ \enit@setresumekey...
-l.149 \resumeSubHeadingListEnd
+l.147 \resumeSubHeadingListEnd
                               
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -513,19 +513,19 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./cv.tex:149: Missing number, treated as zero.
+./cv.tex:147: Missing number, treated as zero.
 <to be read again> 
                    =
-l.149 \resumeSubHeadingListEnd
+l.147 \resumeSubHeadingListEnd
                               
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-./cv.tex:149: Undefined control sequence.
+./cv.tex:147: Undefined control sequence.
 \enit@setresumekeys ...xpandafter {\enit@savekeys 
                                                   }\xdef \enit@afterlist {#2...
-l.149 \resumeSubHeadingListEnd
+l.147 \resumeSubHeadingListEnd
                               
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -533,10 +533,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./cv.tex:149: Undefined control sequence.
+./cv.tex:147: Undefined control sequence.
 \enit@setresumekeys ...it@toks }\ifnum \enit@type 
                                                   =\z@ #3\def \enit@noexcs {...
-l.149 \resumeSubHeadingListEnd
+l.147 \resumeSubHeadingListEnd
                               
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -544,19 +544,19 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./cv.tex:149: Missing number, treated as zero.
+./cv.tex:147: Missing number, treated as zero.
 <to be read again> 
                    =
-l.149 \resumeSubHeadingListEnd
+l.147 \resumeSubHeadingListEnd
                               
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-./cv.tex:149: Undefined control sequence.
+./cv.tex:147: Undefined control sequence.
 \enit@setresumekeys ...me@#1}{\csname c@\@listctr 
                                                   \endcsname \the \csname c@...
-l.149 \resumeSubHeadingListEnd
+l.147 \resumeSubHeadingListEnd
                               
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -564,10 +564,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./cv.tex:149: Undefined control sequence.
+./cv.tex:147: Undefined control sequence.
 \enit@setresumekeys ...e \the \csname c@\@listctr 
                                                   \endcsname }\fi }
-l.149 \resumeSubHeadingListEnd
+l.147 \resumeSubHeadingListEnd
                               
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -575,101 +575,101 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./cv.tex:149: You can't use `\relax' after \the.
+./cv.tex:147: You can't use `\relax' after \the.
 <recently read> \c@ 
                     
-l.149 \resumeSubHeadingListEnd
+l.147 \resumeSubHeadingListEnd
                               
 I'm forgetting what you said and using zero instead.
 
 
-./cv.tex:149: LaTeX Error: \begin{document} ended by \end{itemize}.
+./cv.tex:147: LaTeX Error: \begin{document} ended by \end{itemize}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.149 \resumeSubHeadingListEnd
+l.147 \resumeSubHeadingListEnd
                               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./cv.tex:149: Extra \endgroup.
+./cv.tex:147: Extra \endgroup.
 \end  ...end#1\endcsname \@checkend {#1}\endgroup 
                                                   \UseHook {env/#1/after}\if...
-l.149 \resumeSubHeadingListEnd
+l.147 \resumeSubHeadingListEnd
                               
 Things are pretty mixed up, but I think the worst is over.
 
 
-./cv.tex:155: LaTeX Error: Something's wrong--perhaps a missing \item.
+./cv.tex:153: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.155 \resumeItem
+l.153 \resumeItem
                  {\textbf{European Girls' Mathematical Olympiad (EGMO):} Bro...
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./cv.tex:220: LaTeX Error: Something's wrong--perhaps a missing \item.
+./cv.tex:218: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.220 \resumeItemListEnd
+l.218 \resumeItemListEnd
                         
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./cv.tex:225: LaTeX Error: Something's wrong--perhaps a missing \item.
+./cv.tex:223: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.225 \resumeItemListEnd
+l.223 \resumeItemListEnd
                         
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./cv.tex:231: LaTeX Error: Something's wrong--perhaps a missing \item.
+./cv.tex:229: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.231 \resumeItemListEnd
+l.229 \resumeItemListEnd
                         
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./cv.tex:237: LaTeX Error: Something's wrong--perhaps a missing \item.
+./cv.tex:235: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.237 \resumeItemListEnd
+l.235 \resumeItemListEnd
                         
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./cv.tex:243: LaTeX Error: Something's wrong--perhaps a missing \item.
+./cv.tex:241: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.243 \resumeItemListEnd
+l.241 \resumeItemListEnd
                         
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -692,22 +692,28 @@ L3 programming layer <2024-12-25>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package rerunfilecheck Info: File `cv.out' has not changed.
-(rerunfilecheck)             Checksum: 86A06C73B1449E1FCE4FCDAF5E2A097A;531.
+
+Package rerunfilecheck Warning: File `cv.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `cv.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  86A06C73B1449E1FCE4FCDAF5E2A097A;531.
  ) 
 Here is how much of TeX's memory you used:
- 14163 strings out of 473207
- 243860 string characters out of 5691801
- 663228 words of memory out of 5000000
- 37249 multiletter control sequences out of 15000+600000
+ 14157 strings out of 473207
+ 243803 string characters out of 5691801
+ 663295 words of memory out of 5000000
+ 37243 multiletter control sequences out of 15000+600000
  565655 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,79p,295b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/texlive/2024/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb></opt/texlive/2024/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></opt/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></opt/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></opt/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></opt/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></opt/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on cv.pdf (1 page, 129313 bytes).
+Output written on cv.pdf (1 page, 128975 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 68 compressed objects within 1 object stream
+ 76 PDF objects out of 1000 (max. 8388607)
+ 52 compressed objects within 1 object stream
  7 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
