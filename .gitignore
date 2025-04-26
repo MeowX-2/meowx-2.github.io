@@ -4,6 +4,11 @@ uploads/CV/*.tex
 uploads/CV/*.aux
 uploads/CV/*.out
 uploads/CV/outlier.*
+uploads/ED_JOB_CV/*.log 
+uploads/ED_JOB_CV/*.fdb_latexmk
+uploads/ED_JOB_CV/*.tex 
+uploads/ED_JOB_CV/*.aux
+uploads/ED_JOB_CV/*.out
 uploads/*.log 
 uploads/*.fdb_latexmk
 uploads/*.tex 
