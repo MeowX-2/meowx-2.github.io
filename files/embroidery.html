@@ -1,51 +1,101 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<html lang="bn">
 
 <head>
   <meta charset="UTF-8">
-  <link rel="shortcut icon" type="x-icon" href="../uploads/icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="icon" type="image/png" href="../uploads/icon.png">
   <meta http-equiv="X-UA-compatible" content="IE-edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HSC </title>
+  <title>Embroidery - Arifa Alam</title>
+  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  
+  <!-- CSS & JS -->
   <link rel="stylesheet" href="../style.css">
+  <script src="../script.js" defer></script>
 </head>
 
 <body>
 
-  <header>
-    <div class="container">
-      <nav>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../blog.html">Blog</a></li>
-          <li><a href="../resources.html">Resources </a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div class="layout-wrapper">
+    <!-- Mobile Menu Toggle -->
+    <button class="menu-toggle" aria-label="Toggle Navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
 
-  <section id="blog" class="section-blog">
-    <div class="container">
-           <h2>Some takeaways from a piece</h2>
-                <p><small><i>May 2024</i></small></p>
-            <div class="blog-post-ex">
-          <p>I did some sewing stuff while I was in middle school, for my schoolwork. Been seeing my grandma doing it like it's nothing special and aunts just talking to 4 other aunts and sewing so neatly. </p>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+      <div class="sidebar-header">
+        <h1>Arifa Alam</h1>
+        <p class="subtitle">Math & CS @ BracU</p>
+      </div>
+      
+      <ul class="nav-links">
+        <li><a href="../index.html#about" class="nav-link">About</a></li>
+        <li><a href="../index.html#projects" class="nav-link">Projects</a></li>
+        <li><a href="../index.html#blog" class="nav-link active">Blog</a></li>
+        <li><a href="../index.html#resources" class="nav-link">Resources</a></li>
+      </ul>
 
-          <p>I haven't been in my hometown for more or less four years now, and I had loads of time in the last four months. And, I picked up sewing after a long time. And this blog is just a way to flex about it! :D</p> 
-            <img src="https://meowx-2.github.io/home/files/sew.jpg" width="250px" height="250px">
-            <p>There are mostly traditional stitches as well as some I completely made up(like the pink borders of petals). Apart from the technical stuff, it required a lot of <i>patience</i>. I am someone who can't focus on one thing at a time. I almost always throw up a <a href= "https://youtube.com/gothamchess"> Gothamchess</a> video in the background and continue with my sewing.</p>
-            <p>This was an experimental work which was fun but it kept becoming hard and hard to finish, each time I said finish. Something else comes to my mind. Help!</p>
-            <p> At one time I thought it is enough. Just get over it! Turned out pretty well, I guess.</p>
+      <div class="sidebar-footer">
+        <div class="social-icons">
+          <a href="mailto:alamarifa9@gmail.com" target="_blank" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="../uploads/CV/cv.pdf" title="CV"><i class="fa-solid fa-file"></i></a>
+          <a href="https://github.com/meowx-2" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/meowx" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <button id="theme-toggle" title="Toggle Dark Mode" style="background: none; border: none; cursor: pointer; color: #a2a8d3; font-size: 1.2rem; padding: 0;">
+            <i class="fa-solid fa-moon"></i>
+          </button>
         </div>
-    </div>
-  </section>
+        <p class="copyright">&copy; 2026 Arifa Alam</p>
+      </div>
+    </nav>
 
+    <!-- Main Content Area -->
+    <main class="main-content">
+      
+      <!-- Back Button -->
+      <a href="../index.html#blog" class="back-link">
+        <i class="fa-solid fa-arrow-left"></i> Back to Blogs
+      </a>
+
+      <!-- BLOG POST CONTENT -->
+      <article class="blog-article">
+        <header class="article-header">
+          <h1 class="article-title">Some takeaways from a piece</h1>
+          <div class="article-meta">
+            <span class="date"><i class="fa-regular fa-calendar"></i> May 24, 2024</span>
+            <span class="tag">Personal</span>
+          </div>
+        </header>
+
+        <div class="article-content">
+          <p>I did some sewing stuff while I was in middle school, for my schoolwork. Been seeing my grandma doing it like it's nothing special and aunts just talking to 4 other aunts and sewing so neatly.</p>
+
+          <p>I haven't been in my hometown for more or less four years now, and I had loads of time in the last four months. And, I picked up sewing after a long time. And this blog is just a way to flex about it! :D</p>
+            
+          <img src="https://meowx-2.github.io/home/files/sew.jpg" alt="Sewing piece" class="blog-image">
+            
+          <p>There are mostly traditional stitches as well as some I completely made up(like the pink borders of petals). Apart from the technical stuff, it required a lot of <i>patience</i>. I am someone who can't focus on one thing at a time. I almost always throw up a <a href="https://youtube.com/gothamchess">Gothamchess</a> video in the background and continue with my sewing.</p>
+            
+          <p>This was an experimental work which was fun but it kept becoming hard and hard to finish, each time I said finish. Something else comes to my mind. Help!</p>
+            
+          <p>At one time I thought it is enough. Just get over it! Turned out pretty well, I guess.</p>
+        </div>
+      </article>
+
+      <footer class="mobile-footer">
+        <p>&copy; 2026 Arifa Alam</p>
+      </footer>
+
+    </main>
+  </div>
 
 </body>
-
 </html>

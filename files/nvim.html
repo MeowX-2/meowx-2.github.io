@@ -1,108 +1,141 @@
-﻿<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<html lang="bn">
-<script src="../script.js"></script>
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="shortcut icon" type="x-icon" href="../uploads/icon.png" />
-  <meta http-equiv="X-UA-compatible" content="IE-edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NeoVim</title>
-
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="icon" type="image/png" href="../uploads/icon.png">
+  <meta http-equiv="X-UA-compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeoVim & Random Coding Setups - Arifa Alam</title>
+  
+  <!-- Katex CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
-
-  <link rel="stylesheet" href="https://stackedit.io/style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://stackedit.io/style.css" /> -->
+  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  
+  <!-- CSS & JS -->
+  <link rel="stylesheet" href="../style.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  <script src="../script.js" defer></script>
 </head>
 
 <body>
-  <header>
-    <div class="container">
-      <nav>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../blog.html">Blog</a></li>
-          <li><a href="../resources.html">Resources </a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <section id="blog" class="section-blog">
-    <div class="container">
-      <h2>Neovim &amp; Random Coding setups with it</h2>
-      <p>
-        <small><i>19 September 2024</i></small>
-      </p>
-      <div class="blog-post-ex">
-        <p>
-          So,those who know me closely knows I stan for
-          <code>NeoVim</code>. I won't blabber around NeoVim too much like a weirdo (spoiler: I will). I am mainly writing about the functionality of some configs, which I may forget (another reason is to flex, but that's unrelated). These are available on          <a href="https://github.com/MeowX-2/nvim">GitHub</a>. My configs are heavily
-          influenced by
-          <a href="https://www.youtube.com/playlist?list=PLsz00TDipIffreIaUNk64KxTIkQaGguqn">this</a>
-          playlist (and some Google/Reddit/Github searching as needed).
-              I mostly use it for writing codes for the blog, <code>Latex</code> notes,
-          and occassional rants, thanks to
-          <a href="https://github.com/nvim-neorg/neorg">neorg</a>.
-        </p>
-            <img src="../uploads/nvim-1.jpg"/>
-        <p></p>
-        <h3>Basics & Things That I Find Cool</h3>
-        <p>
-          <b>Theme</b> -
-          <a href="https://github.com/f4z3r/gruvbox-material.nvim">Gruvbox material</a><br />
-          <b>Fonts</b> -
-          <a href="https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip">JetBrains Mono Nerd Font</a>. Note that using a nerd-font in the terminal is mandatory as it is optimized to be used with icons.<br>
-          <b>Statusbar</b> - Basically the bar at the bottom the one I am
-          using is
-          <a href="https://github.com/nvim-lualine/lualine.nvim">lualine</a>.<br >
-          <b>File explorer</b> - 
-          <a href="https://github.com/nvim-tree/nvim-tree.lua">nvim-tree</a>. However,
-          <a href="https://github.com/nvim-neo-tree/neo-tree.nvim">neo-tree</a>
-          is popular too.<br>
-          <b>Syntax highlighting</b> - Treesitter.<br />
-          <b>Completions</b> - Mason with LSP servers, and some
-          custom snippets for TeX, C++, HTML/CSS.
-        </p>
-        <h3 id="vimtex">VimTeX</h3>
-        <p>
-          As I need to write a lot of stuff in <code> Latex</code>, it's been a life-saver. <code>Latex</code> setup with NeoVim as a text editor and Zathura as the
-          PDF viewer is a perfect marriage. Zathura is minimal, more importantly, it supports <code>SyncTeX</code>: You can click a particular line in the PDF, which will take you to the line corresponding to the <code>.tex</code> file.        </p>
-        <blockquote>
-          <p>
-            Note: It’s also important to install both the 
-            <code>zathura</code> and
-            <code>zathura-pdf-poppler</code> plugin.
-          </p>
-        </blockquote>
-        <p>
-          In <code>~/.config/zathura/zathurarc</code> add the following–
-        </p>
-        <div class="code-container">
-          <pre><code id="copied">set synctex true<br>set synctex-editor-command "nvr --remote-silent +%{line} %{input}"</code></pre>
-        </div>
+  <div class="layout-wrapper">
+    <!-- Mobile Menu Toggle -->
+    <button class="menu-toggle" aria-label="Toggle Navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
 
-        <p>
-          The code below sets up the default PDF viewer for VimTeX in
-          NeoVim. Add these in <code>~/.config/nvim/init.lua</code>–
-        </p>
-            <div class="code-container">
-        <pre><code>vim.g.vimtex_view_method = 'zathura'<br>vim.g.latex_view_general_viewer = 'zathura'<br>vim.g.vimtex_compiler_progname = 'nvr'</code></pre></div>
-
-        <p>
-              <a href="https://github.com/MeowX-2/nvim/tree/main/snippets/tex">Here</a>  are custom <code>Latex</code> snippets of my template, which suit Neovim.  Thanks to <a href="https://github.com/nafis277">@nafis277</a> for creating these snippets. 
-        </p>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+      <div class="sidebar-header">
+        <h1>Arifa Alam</h1>
+        <p class="subtitle">Math & CS @ BracU</p>
       </div>
-    </div>
-  </section>
+      
+      <ul class="nav-links">
+        <li><a href="../index.html#about" class="nav-link">About</a></li>
+        <li><a href="../index.html#projects" class="nav-link">Projects</a></li>
+        <li><a href="../index.html#blog" class="nav-link active">Blog</a></li>
+        <li><a href="../index.html#resources" class="nav-link">Resources</a></li>
+      </ul>
+
+      <div class="sidebar-footer">
+        <div class="social-icons">
+          <a href="mailto:alamarifa9@gmail.com" target="_blank" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="../uploads/CV/cv.pdf" title="CV"><i class="fa-solid fa-file"></i></a>
+          <a href="https://github.com/meowx-2" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/meowx" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <button id="theme-toggle" title="Toggle Dark Mode" style="background: none; border: none; cursor: pointer; color: #a2a8d3; font-size: 1.2rem; padding: 0;">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </div>
+        <p class="copyright">&copy; 2026 Arifa Alam</p>
+      </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      
+      <!-- Back Button -->
+      <a href="../index.html#blog" class="back-link">
+        <i class="fa-solid fa-arrow-left"></i> Back to Blogs
+      </a>
+
+      <!-- BLOG POST CONTENT -->
+      <article class="blog-article">
+        <header class="article-header">
+          <h1 class="article-title">NeoVim & Random Coding Setups With It</h1>
+          <div class="article-meta">
+            <span class="date"><i class="fa-regular fa-calendar"></i> September 19, 2024</span>
+            <span class="tag">Code</span>
+          </div>
+        </header>
+
+        <div class="article-content">
+          <p>
+            So, those who know me closely knows I stan for <code>NeoVim</code>. I won't blabber around NeoVim too much like a weirdo (spoiler: I will). I am mainly writing about the functionality of some configs, which I may forget (another reason is to flex, but that's unrelated). These are available on <a href="https://github.com/MeowX-2/nvim">GitHub</a>. My configs are heavily influenced by <a href="https://www.youtube.com/playlist?list=PLsz00TDipIffreIaUNk64KxTIkQaGguqn">this</a> playlist (and some Google/Reddit/Github searching as needed).
+            I mostly use it for writing codes for the blog, <code>Latex</code> notes, and occassional rants, thanks to <a href="https://github.com/nvim-neorg/neorg">neorg</a>.
+          </p>
+            
+          <img src="../uploads/nvim-1.jpg" alt="NeoVim Screenshot" class="blog-image">
+            
+          <h3>Basics & Things That I Find Cool</h3>
+          <p>
+            <b>Theme</b> - <a href="https://github.com/f4z3r/gruvbox-material.nvim">Gruvbox material</a><br>
+            <b>Fonts</b> - <a href="https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip">JetBrains Mono Nerd Font</a>. Note that using a nerd-font in the terminal is mandatory as it is optimized to be used with icons.<br>
+            <b>Statusbar</b> - Basically the bar at the bottom the one I am using is <a href="https://github.com/nvim-lualine/lualine.nvim">lualine</a>.<br>
+            <b>File explorer</b> - <a href="https://github.com/nvim-tree/nvim-tree.lua">nvim-tree</a>. However, <a href="https://github.com/nvim-neo-tree/neo-tree.nvim">neo-tree</a> is popular too.<br>
+            <b>Syntax highlighting</b> - Treesitter.<br>
+            <b>Completions</b> - Mason with LSP servers, and some custom snippets for TeX, C++, HTML/CSS.
+          </p>
+            
+          <h3 id="vimtex">VimTeX</h3>
+          <p>
+            As I need to write a lot of stuff in <code> Latex</code>, it's been a life-saver. <code>Latex</code> setup with NeoVim as a text editor and Zathura as the PDF viewer is a perfect marriage. Zathura is minimal, more importantly, it supports <code>SyncTeX</code>: You can click a particular line in the PDF, which will take you to the line corresponding to the <code>.tex</code> file.
+          </p>
+            
+          <blockquote>
+            <p>
+              Note: It’s also important to install both the <code>zathura</code> and <code>zathura-pdf-poppler</code> plugin.
+            </p>
+          </blockquote>
+            
+          <p>
+            In <code>~/.config/zathura/zathurarc</code> add the following–
+          </p>
+          <div class="code-container">
+            <pre><code id="copied">set synctex true<br>set synctex-editor-command "nvr --remote-silent +%{line} %{input}"</code></pre>
+          </div>
+
+          <p>
+            The code below sets up the default PDF viewer for VimTeX in NeoVim. Add these in <code>~/.config/nvim/init.lua</code>–
+          </p>
+          <div class="code-container">
+            <pre><code>vim.g.vimtex_view_method = 'zathura'<br>vim.g.latex_view_general_viewer = 'zathura'<br>vim.g.vimtex_compiler_progname = 'nvr'</code></pre>
+          </div>
+
+          <p>
+            <a href="https://github.com/MeowX-2/nvim/tree/main/snippets/tex">Here</a> are custom <code>Latex</code> snippets of my template, which suit Neovim. Thanks to <a href="https://github.com/nafis277">@nafis277</a> for creating these snippets.
+          </p>
+        </div>
+      </article>
+
+      <footer class="mobile-footer">
+        <p>&copy; 2026 Arifa Alam</p>
+      </footer>
+
+    </main>
+  </div>
+
 </body>
-
-</html>
-
 </html>

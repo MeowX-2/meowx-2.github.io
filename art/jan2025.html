@@ -1,55 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<html lang="bn">
 
 <head>
   <meta charset="UTF-8">
-  <link rel="shortcut icon" type="x-icon" href="../uploads/icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="icon" type="image/png" href="../uploads/icon.png">
   <meta http-equiv="X-UA-compatible" content="IE-edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> January Art!</title>
+  <title>January Art! - Arifa Alam</title>
+  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  
+  <!-- CSS & JS -->
   <link rel="stylesheet" href="../style.css">
+  <script src="../script.js" defer></script>
 </head>
 
 <body>
 
-  <header>
-    <div class="container">
-      <nav>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../blog.html">Blog</a></li>
-          <li><a href="../resources.html">Resources </a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div class="layout-wrapper">
+    <!-- Mobile Menu Toggle -->
+    <button class="menu-toggle" aria-label="Toggle Navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
 
-  <section id="blog" class="section-blog">
-    <div class="container">
-           <h2>New year, new arts!</h2>
-                <p><small><i> 5 Feb 2025</i></small></p>
-            <div class="blog-post-ex">
-            
-            <p> I am just trying to maintain the streak. Here are the arts that I have made in last month!</p> 
-            <h1> 1. Sewing + last minitue beads</h1>
-            <img src="./photo/jan2025-1" width="250px" height="250px">
-            <p>  This is done in canvas fabric and fabric color. Also used pearl beads that I have colored and raw. On the side note, I was not planning to add the beads. At one time I thought it is enough. Just get over it! Turned out pretty well, I guess.</p>
-            <h1> 2. Random Scribble </h1> 
-            <img src="./photo/jan2025-2.jpg" width="250px" height="250px">
-            <p>Bought a new sketchbook and drawing over them whenever I have time. I still have a A3 skectchbook. However, I never end up using it. So I instead bought a small one. </p>
-            <h1> 3. Yet Another Doodle </h1>
-            <img src="./photo/jan2025-3" width="250px" height="250px">
-            <p> I am kinda sticking to floral arts, and it's just fun to be imaginative and carefree with it.</p> 
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+      <div class="sidebar-header">
+        <h1>Arifa Alam</h1>
+        <p class="subtitle">Math & CS @ BracU</p>
+      </div>
+      
+      <ul class="nav-links">
+        <li><a href="../index.html#about" class="nav-link">About</a></li>
+        <li><a href="../index.html#projects" class="nav-link">Projects</a></li>
+        <li><a href="../index.html#blog" class="nav-link active">Blog</a></li>
+        <li><a href="../index.html#resources" class="nav-link">Resources</a></li>
+      </ul>
 
+      <div class="sidebar-footer">
+        <div class="social-icons">
+          <a href="mailto:alamarifa9@gmail.com" target="_blank" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="../uploads/CV/cv.pdf" title="CV"><i class="fa-solid fa-file"></i></a>
+          <a href="https://github.com/meowx-2" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/meowx" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <button id="theme-toggle" title="Toggle Dark Mode" style="background: none; border: none; cursor: pointer; color: #a2a8d3; font-size: 1.2rem; padding: 0;">
+            <i class="fa-solid fa-moon"></i>
+          </button>
         </div>
-    </div>
-  </section>
+        <p class="copyright">&copy; 2026 Arifa Alam</p>
+      </div>
+    </nav>
 
+    <!-- Main Content Area -->
+    <main class="main-content">
+      
+      <!-- Back Button -->
+      <a href="../index.html#blog" class="back-link">
+        <i class="fa-solid fa-arrow-left"></i> Back to Blogs
+      </a>
+
+      <!-- BLOG POST CONTENT -->
+      <article class="blog-article">
+        <header class="article-header">
+          <h1 class="article-title">New year, new arts!</h1>
+          <div class="article-meta">
+            <span class="date"><i class="fa-regular fa-calendar"></i> Feb 5, 2025</span>
+            <span class="tag">Personal</span>
+          </div>
+        </header>
+
+        <div class="article-content">
+          <p>I am just trying to maintain the streak. Here are the arts that I have made in last month!</p> 
+            
+          <h2>1. Sewing + last minitue beads</h2>
+          <img src="./photo/jan2025-1" alt="Sewing art" class="blog-image">
+          <p>This is done in canvas fabric and fabric color. Also used pearl beads that I have colored and raw. On the side note, I was not planning to add the beads. At one time I thought it is enough. Just get over it! Turned out pretty well, I guess.</p>
+            
+          <h2>2. Random Scribble</h2> 
+          <img src="./photo/jan2025-2.jpg" alt="Random Scribble" class="blog-image">
+          <p>Bought a new sketchbook and drawing over them whenever I have time. I still have a A3 skectchbook. However, I never end up using it. So I instead bought a small one.</p>
+            
+          <h2>3. Yet Another Doodle</h2>
+          <img src="./photo/jan2025-3" alt="Doodle" class="blog-image">
+          <p>I am kinda sticking to floral arts, and it's just fun to be imaginative and carefree with it.</p> 
+        </div>
+      </article>
+
+      <footer class="mobile-footer">
+        <p>&copy; 2026 Arifa Alam</p>
+      </footer>
+
+    </main>
+  </div>
 
 </body>
-
 </html>

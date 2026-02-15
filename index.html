@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="uploads/icon.png">
   <meta http-equiv="X-UA-compatible" content="IE-edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arifa Alam </title>
+  <title>Arifa Alam</title>
   <!-- font --------------------------------------------->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,63 +20,289 @@
 
 <body>
 
-  <header>
-    <div class="container">
-      <h1>Arifa Alam</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="resources.html"> Resources</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div class="layout-wrapper">
+    <!-- Mobile Menu Toggle -->
+    <button class="menu-toggle" aria-label="Toggle Navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
 
-  <section id="about" class="section-about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        Hello! I’m Arifa, currently pursuing a double major in Mathematics and Computer Science at Brac University.
-      </p>
-      <p>
-        I have a strong background in mathematical problem-solving and competitions. I represented Bangladesh at the
-        European Girls’ Mathematical Olympiad (EGMO) from 2021 to 2023, where I earned a Bronze Medal. From 2018 to
-        2023, I was a consistent participant in the Bangladesh Mathematical Olympiad (BDMO), and later contributed as an
-        Academic Team Member for both BDMO and the Bangladesh Girls’ Math Foundation (BGMF).
-      </p>
-      <p>
-        Alongside mathematics, I am passionate about computer science and programming. I was a National Qualifier at the
-        Bangladesh Informatics Olympiad (BDOI) in 2023, and my interests now include frontend development with React and
-        Next.js, Linux systems, and workflow optimization.
-      </p>
-      <p>
-        Outside of academics and coding, I enjoy chess, reading, writing, digital art, and sewing with my grandmother.
-      </p>
-      <p>
-        For a more detailed overview of my academic background, achievements, and experiences, you can connect with me
-        on <a href="https://linkedin.com/in/meowx" target="_blank">LinkedIn</a> or view my <a href="uploads/CV/cv.pdf"
-          target="_balnk">CV</a>, alongside
-        my presence on <a href="mailto:alamarifa9@gmail.com" target="_blank"> Mail</a>, <a
-          href="https://www.duolingo.com/profile/are.if.a" target="_blank">Duolingo</a>,<a
-          href="https://www.chess.com/member/meowx_2" target="_blank"> Chess.com<a>, <a
-              href="https://github.com/meowx-2" target="_blank">Github</a>, <a
-              href="https://open.spotify.com/user/31pftyuhd7fie4pverpmonsvrl64" target="_blank">Spotify</a>, and <a
-              href="https://substack.com/@meowx2?utm_source=user-menu" target="_blank">Substack</a>.
-      </p>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+      <div class="sidebar-header">
+        <h1>Arifa Alam</h1>
+        <p class="subtitle">Math & CS @ BracU</p>
+      </div>
+      
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link active">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#blog" class="nav-link">Blog</a></li>
+        <li><a href="#resources" class="nav-link">Resources</a></li>
+      </ul>
 
-      <h3>Contact/Social:</h3>
-      <p>
-        <a href="mailto:alamarifa9@gmail.com" target="_blank" title="Email"><i class="fa-solid fa-envelope"></i></a>
-        <a href="uploads/CV/cv.pdf" title="CV"><i class="fa-solid fa-file"></i></a>
-        <a href="https://github.com/meowx-2" target="_blank" title="GitHub"><i class="fa-brands fa-github" style="color:#000000"></i></a>
-        <a href="https://linkedin.com/in/meowx" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"
-            style="color:#0077B5"></i></a>
-      </p>
-    </div>
-  </section>
+      <div class="sidebar-footer">
+        <div class="social-icons">
+          <a href="mailto:alamarifa9@gmail.com" target="_blank" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="uploads/CV/cv.pdf" title="CV"><i class="fa-solid fa-file"></i></a>
+          <a href="https://github.com/meowx-2" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/meowx" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <button id="theme-toggle" title="Toggle Dark Mode" style="background: none; border: none; cursor: pointer; color: #a2a8d3; font-size: 1.2rem; padding: 0;">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </div>
+        <p class="copyright">&copy; 2026 Arifa Alam</p>
+      </div>
+    </nav>
 
+    <!-- Main Content Area -->
+    <main class="main-content">
+
+      <!-- HERO SECTION -->
+      <section id="hero" class="hero-section">
+        <div class="hero-content">
+          <img src="uploads/icon.png" alt="Profile Icon" class="hero-avatar">
+          <h1 class="hero-title">Hi, I'm Arifa.</h1>
+          <p class="hero-subtitle">
+            Mathematics & Computer Science Double Major @ Brac University, EGMO Bronze Medalist, and Competitive Programmer.
+          </p>
+          <a href="#about" class="cta-button">
+            Learn More <i class="fa-solid fa-arrow-down" style="margin-left: 5px;"></i>
+          </a>
+        </div>
+      </section>
+      
+      <!-- ABOUT SECTION -->
+      <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="content-block">
+          <p>
+            I am Arifa, a Mathematics and Computer Science double major at Brac University. My academic journey is defined by a rigorous pursuit of problem-solving, highlighted by representing Bangladesh at the <strong>European Girls’ Mathematical Olympiad (EGMO)</strong> for three consecutive years (2021–2023) and earning a <strong>Bronze Medal</strong>.
+          </p>
+          <p>
+            My foundation in competitive mathematics runs deep. I was a consistent participant and later an Academic Team Member for both the <strong>Bangladesh Mathematical Olympiad (BDMO)</strong> and the <strong>Bangladesh Girls’ Math Foundation (BGMF)</strong>. Bridging math with computing, I also qualified for the National Round of the <strong>Bangladesh Informatics Olympiad (BDOI)</strong> in 2023.
+          </p>
+          <p>
+            Currently, I am channeling this analytical background into software development. I specialize in building efficient, modern web applications using <strong>React and Next.js</strong>, with a keen interest in <strong>Linux systems</strong> and workflow optimization.
+          </p>
+          <p>
+            When I’m not coding or solving equations, I explore the creative intersection of logic and art—whether through <strong>chess</strong>, <strong>digital art</strong>, or traditional <strong>sewing</strong> with my grandmother.
+          </p>
+          <p>
+            For a more detailed overview of my academic background, achievements, and experiences, check out my links below:
+          </p>
+
+          <div class="social-grid">
+            <a href="https://www.egmo.org/people/person1804/" target="_blank" class="social-card" title="EGMO">
+              <i class="fa-solid fa-medal"></i>
+              <span>EGMO</span>
+            </a>
+            <a href="https://codeforces.com/profile/ohagainpls" target="_blank" class="social-card" title="Codeforces">
+              <i class="fa-solid fa-chart-simple"></i>
+              <span>Codeforces</span>
+            </a>
+            <a href="https://atcoder.jp/users/MeowX2" target="_blank" class="social-card" title="AtCoder">
+              <i class="fa-solid fa-trophy"></i>
+              <span>AtCoder</span>
+            </a>
+            <a href="https://github.com/meowx-2" target="_blank" class="social-card" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com/in/meowx" target="_blank" class="social-card" title="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="uploads/CV/cv.pdf" target="_blank" class="social-card" title="CV">
+              <i class="fa-solid fa-file-pdf"></i>
+              <span>CV</span>
+            </a>
+            <a href="https://orcid.org/0009-0003-9246-3159" target="_blank" class="social-card" title="ORCID">
+              <i class="fa-brands fa-orcid"></i>
+              <span>ORCID</span>
+            </a>
+            <a href="mailto:alamarifa9@gmail.com" target="_blank" class="social-card" title="Email">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Email</span>
+            </a>
+            <a href="https://substack.com/@meowx2?utm_source=user-menu" target="_blank" class="social-card" title="Substack">
+              <i class="fa-solid fa-bookmark"></i>
+              <span>Substack</span>
+            </a>
+            <a href="https://www.chess.com/member/meowx_2" target="_blank" class="social-card" title="Chess.com">
+              <i class="fa-solid fa-chess-pawn"></i>
+              <span>Chess.com</span>
+            </a>
+            <a href="https://www.duolingo.com/profile/are.if.a" target="_blank" class="social-card" title="Duolingo">
+              <i class="fa-solid fa-language"></i>
+              <span>Duolingo</span>
+            </a>
+            <a href="https://open.spotify.com/user/31pftyuhd7fie4pverpmonsvrl64" target="_blank" class="social-card" title="Spotify">
+              <i class="fa-brands fa-spotify"></i>
+              <span>Spotify</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section id="projects" class="section">
+        <h2 class="section-title">Projects</h2>
+        <div class="grid-container">
+          <div class="card">
+            <div class="card-header">
+              <h3>Personal Portfolio</h3>
+              <span class="card-type">Web</span>
+            </div>
+            <div class="card-body">
+              <p>
+                A minimal, responsive portfolio website built with HTML, CSS, and vanilla JavaScript. Features dark mode, animations, and a clean layout.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/meowx-2/meowx-2.github.io" target="_blank" class="read-more">View Source <i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h3>NeoVim Config</h3>
+              <span class="card-type">Config</span>
+            </div>
+            <div class="card-body">
+              <p>
+                My personal NeoVim configuration featuring LSP, Treesitter, and a custom theme for an optimized development workflow.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/meowx-2/nvim" target="_blank" class="read-more">View Config <i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          
+          <!-- Add more projects here -->
+        </div>
+      </section>
+
+      <!-- BLOG SECTION -->
+      <section id="blog" class="section">
+        <h2 class="section-title">Blog</h2>
+        
+        <div class="tags-container">
+          <span class="tag-label">Filter by:</span>
+          <a href="#" class="tag" data-tag="all">All</a>
+          <a href="#" class="tag" data-tag="code">Code</a>
+          <a href="#" class="tag" data-tag="math">Math</a>
+          <a href="#" class="tag" data-tag="personal">Personal</a>
+        </div>
+
+        <div class="grid-container">
+          <div class="card blog-post" data-tags="code">
+            <div class="card-header">
+              <h3><a href="files/nvim.html">NeoVim & Random Coding Setups</a></h3>
+              <span class="card-type">Code</span>
+            </div>
+            <div class="card-body">
+              <p>
+                So, those who know me closely know I stan for <code>NeoVim</code>.
+                Configuring it has been a journey of productivity and aesthetics.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="files/nvim.html" class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+              <span class="date">Sep 19, 2024</span>
+            </div>
+          </div>
+
+          <div class="card blog-post" data-tags="personal">
+            <div class="card-header">
+              <h3><a href="files/hsc.html">So HSC is over</a></h3>
+              <span class="card-type">Personal</span>
+            </div>
+            <div class="card-body">
+              <p>
+                This is gonna be a short post, just recapping my 11th and 12th grade experiences and what comes next.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="files/hsc.html" class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+              <span class="date">Oct 5, 2023</span>
+            </div>
+          </div>
+
+          <div class="card blog-post" data-tags="personal">
+            <div class="card-header">
+              <h3><a href="files/reflection.html">Reflection</a></h3>
+              <span class="card-type">Personal</span>
+            </div>
+            <div class="card-body">
+              <p>
+                Writing about the most significant period of my life; my Math Olympiad Journey has had a lot of ups and downs.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="files/reflection.html" class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+              <span class="date">May 16, 2023</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESOURCES SECTION -->
+      <section id="resources" class="section">
+        <h2 class="section-title">Resources</h2>
+        <p class="section-intro">A collection of materials and notes I've found useful or created myself.</p>
+        
+        <div class="grid-container">
+          <div class="card resource-card">
+            <h3>Math Olympiad (General)</h3>
+            <ul>
+              <li><a href="https://artofproblemsolving.com/community/" target="_blank">AOPS</a> - Advanced problem solving.</li>
+              <li><a href="https://gonitzoggo.com/archive/problems/math" target="_blank">Gonitzoggo</a> - Bengali math archive.</li>
+              <li><em>Art and Craft Of Problem Solving</em> by Paul Zeitz.</li>
+              <li>নিউরনে অনুরণন (Neurone Onuronon).</li>
+            </ul>
+          </div>
+
+          <div class="card resource-card">
+            <h3>Geometry</h3>
+            <ul>
+              <li><a href="uploads/iranlemma.pdf" target="_blank">Iran Lemma</a> - A note I wrote.</li>
+              <li>Old NCTB Geometry books (2009 or before).</li>
+              <li><em>Euclidean Geometry in Mathematical Olympiads</em> by Evan Chen.</li>
+              <li><em>Geometry Revisited</em>.</li>
+              <li>Notes by <a href="https://yufeizhao.com/olympiad/">Yufei Zhao</a>.</li>
+            </ul>
+          </div>
+
+          <div class="card resource-card">
+            <h3>Number Theory</h3>
+            <ul>
+              <li><em>Modern Olympiad Number Theory</em> by Aditya Khurmi.</li>
+              <li><em>104 Number Theory Problems</em>.</li>
+            </ul>
+          </div>
+
+          <div class="card resource-card">
+            <h3>Combinatorics</h3>
+            <ul>
+              <li><em>Olympiad Combinatorics</em>.</li>
+              <li><em>Problem Solving Strategies</em> by Arthur Engel.</li>
+              <li><em>A Path to Combinatorics for Undergraduates</em>.</li>
+            </ul>
+          </div>
+
+          <div class="card resource-card">
+            <h3>Algebra</h3>
+            <p>A good way to improve is solving shortlist problems and reading solutions on <a href="https://artofproblemsolving.com/community">AOPS</a>.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="mobile-footer">
+        <p>&copy; 2026 Arifa Alam</p>
+      </footer>
+
+    </main>
+  </div>
 
 </body>
-
 </html>

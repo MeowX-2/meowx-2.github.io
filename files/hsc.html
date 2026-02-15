@@ -1,57 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<html lang="bn">
 
 <head>
   <meta charset="UTF-8">
-  <link rel="shortcut icon" type="x-icon" href="../uploads/icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="icon" type="image/png" href="../uploads/icon.png">
   <meta http-equiv="X-UA-compatible" content="IE-edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HSC </title>
+  <title>So HSC is over - Arifa Alam</title>
+  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  
+  <!-- CSS & JS -->
   <link rel="stylesheet" href="../style.css">
+  <script src="../script.js" defer></script>
 </head>
 
 <body>
 
-  <header>
-    <div class="container">
-      <nav>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../blog.html">Blog</a></li>
-          <li><a href="../resources.html">Resources </a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div class="layout-wrapper">
+    <!-- Mobile Menu Toggle -->
+    <button class="menu-toggle" aria-label="Toggle Navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
 
-  <section id="blog" class="section-blog">
-    <div class="container">
-      <h2>So HSC is over :thinking:</h2>
-      <p><small><i>5 October 2023</i></small></p>
-      <div class="blog-post-ex">
-        <p> This is gonna be a short post, I'll just recap my 11th 12th grade.</p>
-        <p>I think the academics are atrocious in the school. And I avoided that. I just survived in the exams and just
-          barely could keep me in shape. I hated their unnecessary rules. And, almost all of my school exams held during
-          my camps. And got rekt from both :')</p>
-        <p>With all of these, I still think they are the nicest part of my life. Because,
-        <ol type='1'>
-          <li>People were nicer to me</li>
-          <li><i>Autocracy</i> not in a bad way btw. </li>
-          <li> I made many <s>inside jokes</s> memories.
-        </ol>
-        </p>
-        <p>
-          The last part of these were stressfull and not upto my level of patience, yet I was able to make it.
-
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+      <div class="sidebar-header">
+        <h1>Arifa Alam</h1>
+        <p class="subtitle">Math & CS @ BracU</p>
       </div>
-    </div>
-  </section>
+      
+      <ul class="nav-links">
+        <li><a href="../index.html#about" class="nav-link">About</a></li>
+        <li><a href="../index.html#projects" class="nav-link">Projects</a></li>
+        <li><a href="../index.html#blog" class="nav-link active">Blog</a></li>
+        <li><a href="../index.html#resources" class="nav-link">Resources</a></li>
+      </ul>
 
+      <div class="sidebar-footer">
+        <div class="social-icons">
+          <a href="mailto:alamarifa9@gmail.com" target="_blank" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="../uploads/CV/cv.pdf" title="CV"><i class="fa-solid fa-file"></i></a>
+          <a href="https://github.com/meowx-2" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/meowx" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <button id="theme-toggle" title="Toggle Dark Mode" style="background: none; border: none; cursor: pointer; color: #a2a8d3; font-size: 1.2rem; padding: 0;">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </div>
+        <p class="copyright">&copy; 2026 Arifa Alam</p>
+      </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      
+      <!-- Back Button -->
+      <a href="../index.html#blog" class="back-link">
+        <i class="fa-solid fa-arrow-left"></i> Back to Blogs
+      </a>
+
+      <!-- BLOG POST CONTENT -->
+      <article class="blog-article">
+        <header class="article-header">
+          <h1 class="article-title">So HSC is over :thinking:</h1>
+          <div class="article-meta">
+            <span class="date"><i class="fa-regular fa-calendar"></i> October 5, 2023</span>
+            <span class="tag">Personal</span>
+          </div>
+        </header>
+
+        <div class="article-content">
+          <p>This is gonna be a short post, I'll just recap my 11th 12th grade.</p>
+          
+          <p>I think the academics are atrocious in the school. And I avoided that. I just survived in the exams and just barely could keep me in shape. I hated their unnecessary rules. And, almost all of my school exams held during my camps. And got rekt from both :')</p>
+          
+          <p>With all of these, I still think they are the nicest part of my life. Because:</p>
+          <ol>
+            <li>People were nicer to me</li>
+            <li><i>Autocracy</i> not in a bad way btw.</li>
+            <li>I made many <s>inside jokes</s> memories.</li>
+          </ol>
+          
+          <p>The last part of these were stressful and not upto my level of patience, yet I was able to make it.</p>
+        </div>
+      </article>
+
+      <footer class="mobile-footer">
+        <p>&copy; 2026 Arifa Alam</p>
+      </footer>
+
+    </main>
+  </div>
 
 </body>
-
 </html>
