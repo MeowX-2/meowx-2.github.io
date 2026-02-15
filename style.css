@@ -9,14 +9,14 @@ body {
   a:link {
     color: #0E6c9c;
     text-decoration: none;
-    font-family: monospace, sans-serif;
+    font-family: Montserrat, sans-serif;
     font-weight: normal;
   }
 
   a:visited {
     color: #404576;
     text-decoration: none underline auto;
-    font-family: monospace, sans-serif;
+    font-family: Montserrat, sans-serif;
     font-weight: normal;
   }
 
@@ -167,7 +167,6 @@ meow {
     margin-bottom: 0px;
     color: #312D6D;
     text-decoration: solid;
-    font-family: sans-serif;
     font-weight: bold;
   }
 }
@@ -178,6 +177,10 @@ meow {
   padding-left: 2em;
   padding-top: 1em;
   padding-right: 2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Montserrat, sans-serif;
 }
 
 h2 {
@@ -210,14 +213,12 @@ h3 {
   a:link {
     color: #312D6D;
     text-decoration: none;
-    font-family: sans-serif;
     font-weight: bold;
   }
 
   a:visited {
     color: #312D6D;
     text-decoration: none;
-    font-family: sans-serif;
     font-weight: bold;
   }
 }
@@ -270,7 +271,7 @@ a {
   margin-right: 5px;
   display: inline-block;
   font-size: 12px;
-  font-family: monospace, sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 
 .blog-type {
@@ -279,7 +280,7 @@ a {
   padding: 3px 8px;
   border-radius: 10px;
   display: inline-block;
-  font-family: monospace, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 12px;
 }
 
