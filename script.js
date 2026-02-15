@@ -1,4 +1,23 @@
+/**
+ * Portfolio website scripts
+ * Handles blog filtering, math rendering, and smooth scrolling
+ */
+
 document.addEventListener("DOMContentLoaded", function () {
+  // Initialize tag filtering for blog posts
+  initializeBlogFiltering();
+  
+  // Initialize KaTeX math rendering
+  initializeMathRendering();
+  
+  // Initialize smooth scrolling
+  initializeSmoothScrolling();
+});
+
+/**
+ * Set up click handlers for blog post tag filtering
+ */
+function initializeBlogFiltering() {
   const tags = document.querySelectorAll(".tag");
   const blogPosts = document.querySelectorAll(".blog-post");
 
@@ -18,29 +37,40 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
-});
+}
 
-document.addEventListener("DOMContentLoaded", function () {
-  renderMathInElement(document.body, {
-    // Configure delimiters
-    delimiters: [
-      { left: "$$", right: "$$", display: true },
-      { left: "\\[", right: "\\]", display: true },
-      { left: "$", right: "$", display: false },
-      { left: "\\(", right: "\\)", display: false },
-    ],
-    // Optional: Define macros if needed
-    // macros: {"\\RR": "\\mathbb{R}"}
-  });
-});
+/**
+ * Render mathematical expressions using KaTeX
+ */
+function initializeMathRendering() {
+  if (typeof renderMathInElement !== 'undefined') {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "\\[", right: "\\]", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+      ],
+    });
+  }
+}
 
-// Smooth scroll functionality
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
+/**
+ * Enable smooth scrolling for anchor links
+ */
+function initializeSmoothScrolling() {
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
 
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth",
+      const targetId = this.getAttribute("href");
+      const target = document.querySelector(targetId);
+      
+      if (target) {
+        target.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
     });
   });
-});
+}

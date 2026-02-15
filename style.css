@@ -1,5 +1,5 @@
 body {
-  font-family: monserrat, sans-serif;
+  font-family: Montserrat, sans-serif;
   background: #E6E5FA;
   color: #000;
   margin: 0;
@@ -59,7 +59,7 @@ header {
     text-decoration-thickness: 50%;
     color: #fff;
     text-decoration: none;
-    display-decoration: inline-block;
+    display: inline-block;
     padding: 0.5em;
     background-color: #453F78;
   }
@@ -68,14 +68,14 @@ header {
     border-radius: 5px;
     color: #fff;
     text-decoration: none;
-    display-decoration: inline-block;
+    display: inline-block;
     padding: 0.5em;
   }
 
   a:hover {
     color: #fff;
-    text-shadow: #fff;
-    text-radius: 30px;
+    text-shadow: 0 0 5px #fff;
+    border-radius: 30px;
     font-size: 100%;
   }
 
@@ -110,11 +110,11 @@ header {
 .blog-post-ex {
   margin-bottom: 40px;
   overflow: hidden;
-  padding-up: 10px;
   padding: 30px;
   background: #fbfbff;
   border-radius: 10px;
-  box-shadow: 0 0 5px #16195;
+  box-shadow: 0 0 5px #161925;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   ul {
     list-style: disc;
@@ -125,11 +125,11 @@ header {
 .resource-post-ex {
   margin-bottom: 40px;
   overflow: hidden;
-  padding-up: 10px;
   padding: 30px;
   background: #fbfbff;
   border-radius: 10px;
   box-shadow: 0 0 5px #161925;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   ul {
     list-style: disc;
@@ -137,10 +137,11 @@ header {
   }
 }
 
-.blog-post:hover {
+.blog-post:hover,
+.blog-post-ex:hover,
+.resource-post-ex:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 12px #161925;
-
 }
 
 nav li {
@@ -175,7 +176,8 @@ meow {
 .section-blog {
   color: #080505;
   padding-left: 2em;
-  padding-up: 1em padding-right: 2em;
+  padding-top: 1em;
+  padding-right: 2em;
 }
 
 h2 {
@@ -239,7 +241,7 @@ a {
 
 .tags {
   margin-bottom: 40px;
-  font-family: monserrat, sans-serif;
+  font-family: Montserrat, sans-serif;
   margin-left: 0em;
   margin-top: 1em;
 }
@@ -248,7 +250,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: monserrat, sans-serif;
+  font-family: Montserrat, sans-serif;
   margin-top: 2em;
 }
 
@@ -256,7 +258,7 @@ a {
   font-size: 11px;
   padding-bottom: 5px;
   font-style: italic;
-  font-family: monserrat, sans-serif;
+  font-family: Montserrat, sans-serif;
   margin-left: auto;
 }
 
@@ -281,25 +283,5 @@ a {
   font-size: 12px;
 }
 
-/* .code-container { */
-/*   font-family: monospace; */
-/*   color: black; */
-/*   padding: 5px 8px; */
-/*   border-radius: 10px; */
-/*   position: relative; */
-/*   max-width: 100%; */
-/*   margin-top: 10px; */
-/*   margin-left: 10px; */
-/*   height: auto; */
-/*   overflow: auto; */
-/* } */
-
-/* pre { */
-/*   align:left; */
-/*   margin: 0; */
-/*   font-family: monospace, sans-serif; */
-/*   white-space: pre-wrap; */
-/*   word-wrap: break-word; */
-/*   line-height: 1.2; */
-/* } */
+/* Removed unused code-container and pre styles - not currently used in markup */
 
