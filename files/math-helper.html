@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="icon" type="image/png" href="../uploads/icon.png">
+  <meta http-equiv="X-UA-compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HintSpark — Math Helper - Arifa Alam</title>
+  
+  <!-- SEO & OpenGraph Meta Tags -->
+  <meta name="description" content="HintSpark is a modern web application, native desktop app, and PWA for publishing mathematical essays with KaTeX math rendering and a guided Multi-AI Math Assistant (Gemini & Claude).">
+  <meta property="og:title" content="HintSpark — Mathematical Insights & Multi-AI Math Assistant">
+  <meta property="og:description" content="A guided math tutor and essay platform powered by Google Gemini & Anthropic Claude APIs.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://meowx-2.github.io/files/math-helper.html">
+
+  <!-- KaTeX CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS & JS -->
+  <link rel="stylesheet" href="../style.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" defer></script>
+  <script src="../script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="layout-wrapper">
+    <!-- Mobile Menu Toggle -->
+    <button class="menu-toggle" aria-label="Toggle Navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" aria-label="Main Navigation">
+      <div class="sidebar-header">
+        <h1>Arifa Alam</h1>
+        <p class="subtitle">Math & CS @ BracU</p>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="../index.html#about" class="nav-link">About</a></li>
+        <li><a href="../index.html#projects" class="nav-link">Projects</a></li>
+        <li><a href="../index.html#blog" class="nav-link active">Blog</a></li>
+        <li><a href="../index.html#resources" class="nav-link">Resources</a></li>
+      </ul>
+
+      <div class="sidebar-footer">
+        <div class="social-icons">
+          <a href="mailto:alamarifa9@gmail.com" target="_blank" rel="noopener" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="../uploads/CV/cv.pdf" title="CV"><i class="fa-solid fa-file"></i></a>
+          <a href="https://github.com/meowx-2" target="_blank" rel="noopener" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/meowx" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <button id="theme-toggle" title="Toggle Dark Mode" aria-label="Toggle Dark Mode" style="background: none; border: none; cursor: pointer; color: #a2a8d3; font-size: 1.2rem; padding: 0;">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </div>
+        <p class="copyright">&copy; 2026 Arifa Alam</p>
+      </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+
+      <!-- Back Button -->
+      <a href="../index.html#blog" class="back-link">
+        <i class="fa-solid fa-arrow-left"></i> Back to Blogs
+      </a>
+
+      <!-- ARTICLE CONTENT -->
+      <article class="blog-article">
+        <header class="article-header">
+          <h1 class="article-title">HintSpark — Mathematical Insights &amp; Multi-AI Math Assistant</h1>
+          <div class="article-meta">
+            <span class="date"><i class="fa-regular fa-calendar"></i> August 4, 2026</span>
+            <span class="tag">Code</span>
+          </div>
+        </header>
+
+        <div class="article-content">
+          <p>
+            <strong>HintSpark</strong> (Math Helper) is a modern, responsive web application, native desktop application, and Android-installable PWA designed for reading and publishing mathematical essays, complete with KaTeX expression rendering and an interactive <strong>Multi-AI Math Assistant</strong> powered by <code>Google Gemini</code> and <code>Anthropic Claude</code>.
+            The complete source code is available on <a href="https://github.com/MeowX-2/math-helper" target="_blank" rel="noopener">GitHub</a>.
+          </p>
+
+          <h3>Guided Math Tutor Concept</h3>
+          <p>
+            Unlike standard AI search engines or chatbots that immediately output full solutions, HintSpark acts as a <em>guided math tutor</em>. It provides progressive hints and probing prompts to help students develop analytical problem-solving skills independently.
+          </p>
+
+          <h3>Key Features</h3>
+          <ul>
+            <li><strong>🤖 Multi-AI Guided Tutor:</strong> Engine supporting Google Gemini API (<code>gemini-1.5-flash</code>, <code>gemini-2.0-flash</code>, <code>gemini-1.5-pro</code>) and Anthropic Claude API (<code>claude-3-5-sonnet</code>, <code>claude-3-5-haiku</code>) with automatic provider routing.</li>
+            <li><strong>🔑 Bring-Your-Own-Key (BYOK):</strong> Users can securely configure their own API keys via the UI modal; server keys are kept protected.</li>
+            <li><strong>📁 Auto <code>.env</code> Config:</strong> Inputting keys via the UI modal automatically writes a clean local <code>.env</code> file.</li>
+            <li><strong>📐 KaTeX Math Rendering:</strong> Full support for inline ($\int_0^\infty f(x)dx$) and display ($\sum_{n=1}^\infty \frac{1}{n^2} = \frac{\pi^2}{6}$) LaTeX formulas.</li>
+            <li><strong>📰 Mathematical Essay Feed:</strong> Substack-style article grid with dynamic tag filters (<em>Number Theory</em>, <em>Calculus</em>, <em>Algebra</em>, <em>Geometry</em>) and search.</li>
+            <li><strong>✍️ Community Publishing:</strong> Publish mathematical stories with automatic read-time and LaTeX complexity estimation.</li>
+            <li><strong>📱 Cross-Platform Deployment:</strong> Run as a Flask web app, native desktop app via <code>pywebview</code>, or Android PWA.</li>
+          </ul>
+
+          <h3>Tech Stack</h3>
+          <p>
+            <b>Backend:</b> Python 3.8+, Flask, <code>google-generativeai</code>, <code>python-dotenv</code>, <code>pywebview</code><br>
+            <b>Frontend:</b> HTML5, CSS3 (Design tokens), JavaScript (ES6+), <code>marked.js</code>, KaTeX<br>
+            <b>Supported AI Providers:</b> Google Gemini API, Anthropic Claude API
+          </p>
+
+          <h3>Getting Started &amp; Running Locally</h3>
+          <p>Clone the repository and install requirements to get started locally:</p>
+          <div class="code-container">
+            <pre><code># Clone repository
+git clone https://github.com/MeowX-2/math-helper.git
+cd math-helper
+
+# Set up virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: .\venv\Scripts\Activate.ps1
+
+# Install dependencies & run app
+pip install -r requirements.txt
+python app.py</code></pre>
+          </div>
+
+          <p>
+            Check out the live repository and contribute on <a href="https://github.com/MeowX-2/math-helper" target="_blank" rel="noopener">GitHub <i class="fa-brands fa-github"></i></a>.
+          </p>
+        </div>
+      </article>
+
+      <footer class="mobile-footer">
+        <p>&copy; 2026 Arifa Alam</p>
+      </footer>
+
+    </main>
+  </div>
+
+</body>
+</html>
