@@ -1,0 +1,42 @@
+[
+  {
+    "file": "math-helper",
+    "title": "HintSpark — Multi-AI Math Assistant",
+    "summary": "HintSpark is a guided math tutor and essay platform powered by Google Gemini & Anthropic Claude APIs with KaTeX math rendering and cross-platform support.",
+    "date": "Aug 4, 2026",
+    "tag": "code",
+    "tagLabel": "Code"
+  },
+  {
+    "file": "nvim",
+    "title": "NeoVim & Random Coding Setups",
+    "summary": "So, those who know me closely know I stan for NeoVim. Configuring it has been a journey of productivity and aesthetics.",
+    "date": "Sep 19, 2024",
+    "tag": "code",
+    "tagLabel": "Code"
+  },
+  {
+    "file": "embroidery",
+    "title": "Some takeaways from a piece",
+    "summary": "I did some sewing stuff while I was in middle school. Picking it back up after a long time and reflecting on patience.",
+    "date": "May 24, 2024",
+    "tag": "personal",
+    "tagLabel": "Personal"
+  },
+  {
+    "file": "hsc",
+    "title": "So HSC is over 🤔",
+    "summary": "This is gonna be a short post, just recapping my 11th and 12th grade experiences and what comes next.",
+    "date": "Oct 5, 2023",
+    "tag": "personal",
+    "tagLabel": "Personal"
+  },
+  {
+    "file": "reflection",
+    "title": "Reflection",
+    "summary": "Writing about the most significant period of my life; my Math Olympiad Journey has had a lot of ups and downs.",
+    "date": "May 16, 2023",
+    "tag": "personal",
+    "tagLabel": "Personal"
+  }
+]
