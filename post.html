@@ -112,13 +112,7 @@
         })
         .catch(err => {
           document.getElementById('post-title').textContent = "Post Not Found";
-          const isFileProtocol = window.location.protocol === 'file:';
-          let msg = "<p>Sorry, the requested Markdown blog post could not be found.</p>";
-          if (isFileProtocol) {
-            msg += "<p><em>Note: Opening HTML files directly via file:// blocks fetching local Markdown files due to browser security. Please push to GitHub Pages or run a local server (e.g. <code>python -m http.server</code>).</em></p>";
-          }
-          msg += "<br><a href='index.html#blog' class='cta-button'>Return to Blog</a>";
-          document.getElementById('post-body').innerHTML = msg;
+          document.getElementById('post-body').innerHTML = "<p>Sorry, the requested Markdown blog post could not be found.</p><br><a href='index.html#blog' class='cta-button'>Return to Blog</a>";
         });
     });
 
