@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Post — Arifa Alam</title>
+  <meta name="theme-color" content="#1a1c29">
+  <link rel="icon" type="image/png" href="uploads/icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- KaTeX CSS & JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" defer></script>
+  
+  <!-- Marked.js (Markdown Parser) -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="layout-wrapper">
+    <!-- Mobile Menu Toggle -->
+    <button class="menu-toggle" aria-label="Toggle Navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" aria-label="Main Navigation">
+      <div class="sidebar-header">
+        <h1>Arifa Alam</h1>
+        <p class="subtitle">Math & CS @ BracU</p>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+        <li><a href="index.html#blog" class="nav-link active">Blog</a></li>
+        <li><a href="index.html#resources" class="nav-link">Resources</a></li>
+      </ul>
+
+      <div class="sidebar-footer">
+        <div class="social-icons">
+          <a href="mailto:alamarifa9@gmail.com" target="_blank" rel="noopener noreferrer" title="Email" aria-label="Send Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="uploads/CV/cv.pdf" target="_blank" rel="noopener noreferrer" title="CV" aria-label="View CV"><i class="fa-solid fa-file"></i></a>
+          <a href="https://github.com/meowx-2" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/meowx" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+          <button id="theme-toggle" class="theme-toggle-btn" title="Toggle Dark Mode" aria-label="Toggle Dark Mode">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </div>
+        <p class="copyright">&copy; 2026 Arifa Alam</p>
+      </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+
+      <!-- Back Button -->
+      <a href="index.html#blog" class="back-link">
+        <i class="fa-solid fa-arrow-left"></i> Back to Blogs
+      </a>
+
+      <!-- BLOG POST ARTICLE CONTAINER -->
+      <article class="blog-article" id="article-container">
+        <header class="article-header">
+          <h1 class="article-title" id="post-title">Loading post...</h1>
+          <div class="article-meta" id="post-meta">
+            <span class="date" id="post-date"><i class="fa-regular fa-calendar"></i> ...</span>
+            <span class="read-time" id="post-readtime"><i class="fa-regular fa-clock"></i> ...</span>
+            <span class="tag" id="post-tag">...</span>
+          </div>
+        </header>
+
+        <div class="article-content" id="post-body">
+          <p>Loading post content...</p>
+        </div>
+      </article>
+
+      <footer class="mobile-footer">
+        <p>&copy; 2026 Arifa Alam</p>
+      </footer>
+
+    </main>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const urlParams = new URLSearchParams(window.location.search);
+      const postName = urlParams.get('file') || urlParams.get('post') || 'sample-post';
+      
+      fetch(`posts/${postName}.md`)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error("Post not found");
+          }
+          return response.text();
+        })
+        .then(text => {
+          renderMarkdownPost(text);
+        })
+        .catch(err => {
+          document.getElementById('post-title').textContent = "Post Not Found";
+          document.getElementById('post-body').innerHTML = "<p>Sorry, the requested Markdown blog post could not be found.</p><a href='index.html#blog' class='cta-button'>Return to Blog</a>";
+        });
+    });
+
+    function renderMarkdownPost(rawText) {
+      let title = "Blog Post";
+      let date = "Recent";
+      let tag = "Blog";
+      let content = rawText;
+
+      // Extract Frontmatter (--- ... ---)
+      const frontmatterMatch = rawText.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
+      if (frontmatterMatch) {
+        const frontmatter = frontmatterMatch[1];
+        content = frontmatterMatch[2];
+
+        frontmatter.split('\n').forEach(line => {
+          const [key, ...valueParts] = line.split(':');
+          if (key && valueParts.length > 0) {
+            const value = valueParts.join(':').trim();
+            if (key.trim() === 'title') title = value;
+            if (key.trim() === 'date') date = value;
+            if (key.trim() === 'tag') tag = value;
+          }
+        });
+      }
+
+      // Calculate Reading Time (words / 200)
+      const wordCount = content.trim().split(/\s+/).length;
+      const readTimeMinutes = Math.max(1, Math.ceil(wordCount / 200));
+
+      // Update DOM
+      document.title = `${title} — Arifa Alam`;
+      document.getElementById('post-title').textContent = title;
+      document.getElementById('post-date').innerHTML = `<i class="fa-regular fa-calendar"></i> ${date}`;
+      document.getElementById('post-readtime').innerHTML = `<i class="fa-regular fa-clock"></i> ${readTimeMinutes} min read`;
+      document.getElementById('post-tag').textContent = tag;
+
+      // Parse Markdown
+      document.getElementById('post-body').innerHTML = marked.parse(content);
+
+      // Render KaTeX Math
+      if (typeof renderMathInElement !== 'undefined') {
+        renderMathInElement(document.body, {
+          delimiters: [
+            { left: "$$", right: "$$", display: true },
+            { left: "\\[", right: "\\]", display: true },
+            { left: "$", right: "$", display: false },
+            { left: "\\(", right: "\\)", display: false },
+          ],
+          throwOnError: false
+        });
+      }
+    }
+  </script>
+</body>
+</html>
