@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://meowx-2.github.io/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://meowx-2.github.io/blog.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://meowx-2.github.io/resources.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://meowx-2.github.io/files/math-helper.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://meowx-2.github.io/files/nvim.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://meowx-2.github.io/files/hsc.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://meowx-2.github.io/files/reflection.html</loc>
+    <priority>0.6</priority>
+  </url>
+</urlset>

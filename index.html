@@ -3,17 +3,38 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-  <link rel="icon" type="image/png" href="uploads/icon.png">
-  <meta http-equiv="X-UA-compatible" content="IE-edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arifa Alam</title>
-  <!-- font --------------------------------------------->
+  <title>Arifa Alam | Math & CS Portfolio</title>
+  <meta name="description" content="Personal portfolio of Arifa Alam — Mathematics & Computer Science student at Brac University, EGMO Bronze Medalist, and Competitive Programmer.">
+  <meta name="theme-color" content="#1a1c29">
+  <link rel="canonical" href="https://meowx-2.github.io/">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://meowx-2.github.io/">
+  <meta property="og:title" content="Arifa Alam | Math & CS Portfolio">
+  <meta property="og:description" content="Mathematics & Computer Science Double Major @ BracU, EGMO Bronze Medalist, and Competitive Programmer.">
+  <meta property="og:image" content="https://meowx-2.github.io/uploads/icon.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Arifa Alam | Math & CS Portfolio">
+  <meta name="twitter:description" content="Mathematics & Computer Science Double Major @ BracU, EGMO Bronze Medalist, and Competitive Programmer.">
+  <meta name="twitter:image" content="https://meowx-2.github.io/uploads/icon.png">
+
+  <link rel="icon" type="image/png" href="uploads/icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- KaTeX CSS & JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" defer></script>
+
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
@@ -42,11 +63,11 @@
 
       <div class="sidebar-footer">
         <div class="social-icons">
-          <a href="mailto:alamarifa9@gmail.com" target="_blank" title="Email"><i class="fa-solid fa-envelope"></i></a>
-          <a href="uploads/CV/cv.pdf" title="CV"><i class="fa-solid fa-file"></i></a>
-          <a href="https://github.com/meowx-2" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
-          <a href="https://linkedin.com/in/meowx" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-          <button id="theme-toggle" title="Toggle Dark Mode" style="background: none; border: none; cursor: pointer; color: #a2a8d3; font-size: 1.2rem; padding: 0;">
+          <a href="mailto:alamarifa9@gmail.com" target="_blank" rel="noopener noreferrer" title="Email" aria-label="Send Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="uploads/CV/cv.pdf" target="_blank" rel="noopener noreferrer" title="CV" aria-label="View CV"><i class="fa-solid fa-file"></i></a>
+          <a href="https://github.com/meowx-2" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/meowx" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+          <button id="theme-toggle" class="theme-toggle-btn" title="Toggle Dark Mode" aria-label="Toggle Dark Mode">
             <i class="fa-solid fa-moon"></i>
           </button>
         </div>
@@ -92,51 +113,51 @@
           </p>
 
           <div class="social-grid">
-            <a href="https://www.egmo.org/people/person1804/" target="_blank" class="social-card" title="EGMO">
+            <a href="https://www.egmo.org/people/person1804/" target="_blank" rel="noopener noreferrer" class="social-card" title="EGMO">
               <i class="fa-solid fa-medal"></i>
               <span>EGMO</span>
             </a>
-            <a href="https://codeforces.com/profile/ohagainpls" target="_blank" class="social-card" title="Codeforces">
+            <a href="https://codeforces.com/profile/ohagainpls" target="_blank" rel="noopener noreferrer" class="social-card" title="Codeforces">
               <i class="fa-solid fa-chart-simple"></i>
               <span>Codeforces</span>
             </a>
-            <a href="https://atcoder.jp/users/MeowX2" target="_blank" class="social-card" title="AtCoder">
+            <a href="https://atcoder.jp/users/MeowX2" target="_blank" rel="noopener noreferrer" class="social-card" title="AtCoder">
               <i class="fa-solid fa-trophy"></i>
               <span>AtCoder</span>
             </a>
-            <a href="https://github.com/meowx-2" target="_blank" class="social-card" title="GitHub">
+            <a href="https://github.com/meowx-2" target="_blank" rel="noopener noreferrer" class="social-card" title="GitHub">
               <i class="fa-brands fa-github"></i>
               <span>GitHub</span>
             </a>
-            <a href="https://linkedin.com/in/meowx" target="_blank" class="social-card" title="LinkedIn">
+            <a href="https://linkedin.com/in/meowx" target="_blank" rel="noopener noreferrer" class="social-card" title="LinkedIn">
               <i class="fa-brands fa-linkedin"></i>
               <span>LinkedIn</span>
             </a>
-            <a href="uploads/CV/cv.pdf" target="_blank" class="social-card" title="CV">
+            <a href="uploads/CV/cv.pdf" target="_blank" rel="noopener noreferrer" class="social-card" title="CV">
               <i class="fa-solid fa-file-pdf"></i>
               <span>CV</span>
             </a>
-            <a href="https://orcid.org/0009-0003-9246-3159" target="_blank" class="social-card" title="ORCID">
+            <a href="https://orcid.org/0009-0003-9246-3159" target="_blank" rel="noopener noreferrer" class="social-card" title="ORCID">
               <i class="fa-brands fa-orcid"></i>
               <span>ORCID</span>
             </a>
-            <a href="mailto:alamarifa9@gmail.com" target="_blank" class="social-card" title="Email">
+            <a href="mailto:alamarifa9@gmail.com" target="_blank" rel="noopener noreferrer" class="social-card" title="Email">
               <i class="fa-solid fa-envelope"></i>
               <span>Email</span>
             </a>
-            <a href="https://substack.com/@meowx2?utm_source=user-menu" target="_blank" class="social-card" title="Substack">
+            <a href="https://substack.com/@meowx2?utm_source=user-menu" target="_blank" rel="noopener noreferrer" class="social-card" title="Substack">
               <i class="fa-solid fa-bookmark"></i>
               <span>Substack</span>
             </a>
-            <a href="https://www.chess.com/member/meowx_2" target="_blank" class="social-card" title="Chess.com">
+            <a href="https://www.chess.com/member/meowx_2" target="_blank" rel="noopener noreferrer" class="social-card" title="Chess.com">
               <i class="fa-solid fa-chess-pawn"></i>
               <span>Chess.com</span>
             </a>
-            <a href="https://www.duolingo.com/profile/are.if.a" target="_blank" class="social-card" title="Duolingo">
+            <a href="https://www.duolingo.com/profile/are.if.a" target="_blank" rel="noopener noreferrer" class="social-card" title="Duolingo">
               <i class="fa-solid fa-language"></i>
               <span>Duolingo</span>
             </a>
-            <a href="https://open.spotify.com/user/31pftyuhd7fie4pverpmonsvrl64" target="_blank" class="social-card" title="Spotify">
+            <a href="https://open.spotify.com/user/31pftyuhd7fie4pverpmonsvrl64" target="_blank" rel="noopener noreferrer" class="social-card" title="Spotify">
               <i class="fa-brands fa-spotify"></i>
               <span>Spotify</span>
             </a>
@@ -159,7 +180,7 @@
               </p>
             </div>
             <div class="card-footer">
-              <a href="https://github.com/meowx-2/meowx-2.github.io" target="_blank" class="read-more">View Source <i class="fa-brands fa-github"></i></a>
+              <a href="https://github.com/meowx-2/meowx-2.github.io" target="_blank" rel="noopener noreferrer" class="read-more">View Source <i class="fa-brands fa-github"></i></a>
             </div>
           </div>
 
@@ -174,7 +195,7 @@
               </p>
             </div>
             <div class="card-footer">
-              <a href="https://github.com/meowx-2/nvim" target="_blank" class="read-more">View Config <i class="fa-brands fa-github"></i></a>
+              <a href="https://github.com/meowx-2/nvim" target="_blank" rel="noopener noreferrer" class="read-more">View Config <i class="fa-brands fa-github"></i></a>
             </div>
           </div>
           
@@ -189,7 +210,7 @@
               </p>
             </div>
             <div class="card-footer">
-              <a href="https://github.com/MeowX-2/math-helper" target="_blank" rel="noopener" class="read-more">Source <i class="fa-brands fa-github"></i></a>
+              <a href="https://github.com/MeowX-2/math-helper" target="_blank" rel="noopener noreferrer" class="read-more">Source <i class="fa-brands fa-github"></i></a>
               <a href="files/math-helper.html" class="read-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
@@ -223,7 +244,7 @@
             </div>
             <div class="card-footer">
               <a href="files/math-helper.html" class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
-              <span class="date">Aug 4, 2026</span>
+              <span class="date"><i class="fa-regular fa-clock"></i> 2 min read &bull; Aug 4, 2026</span>
             </div>
           </div>
 
@@ -240,7 +261,7 @@
             </div>
             <div class="card-footer">
               <a href="files/nvim.html" class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
-              <span class="date">Sep 19, 2024</span>
+              <span class="date"><i class="fa-regular fa-clock"></i> 2 min read &bull; Sep 19, 2024</span>
             </div>
           </div>
 
@@ -256,7 +277,7 @@
             </div>
             <div class="card-footer">
               <a href="files/hsc.html" class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
-              <span class="date">Oct 5, 2023</span>
+              <span class="date"><i class="fa-regular fa-clock"></i> 1 min read &bull; Oct 5, 2023</span>
             </div>
           </div>
 
@@ -272,7 +293,7 @@
             </div>
             <div class="card-footer">
               <a href="files/reflection.html" class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
-              <span class="date">May 16, 2023</span>
+              <span class="date"><i class="fa-regular fa-clock"></i> 6 min read &bull; May 16, 2023</span>
             </div>
           </div>
         </div>

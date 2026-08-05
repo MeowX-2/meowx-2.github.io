@@ -207,14 +207,21 @@ function initializeSmoothScrolling() {
  * Render mathematical expressions using KaTeX (if available)
  */
 function initializeMathRendering() {
-  if (typeof renderMathInElement !== 'undefined') {
-    renderMathInElement(document.body, {
-      delimiters: [
-        { left: "$$", right: "$$", display: true },
-        { left: "\\[", right: "\\]", display: true },
-        { left: "$", right: "$", display: false },
-        { left: "\\(", right: "\\)", display: false },
-      ],
-    });
-  }
+  const render = () => {
+    if (typeof renderMathInElement !== 'undefined') {
+      renderMathInElement(document.body, {
+        delimiters: [
+          { left: "$$", right: "$$", display: true },
+          { left: "\\[", right: "\\]", display: true },
+          { left: "$", right: "$", display: false },
+          { left: "\\(", right: "\\)", display: false },
+        ],
+        throwOnError: false
+      });
+    }
+  };
+
+  render();
+  window.addEventListener("load", render);
 }
+

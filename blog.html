@@ -3,30 +3,27 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" type="image/png" href="../uploads/icon.png">
-  <meta http-equiv="X-UA-compatible" content="IE-edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blogs - Arifa Alam</title>
+  <title>Blog — Arifa Alam</title>
+  <meta name="description" content="Blog posts by Arifa Alam on Mathematics, NeoVim, Programming, and Personal Reflections.">
+  <meta name="theme-color" content="#1a1c29">
+  <link rel="icon" type="image/png" href="uploads/icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 
 <body>
 
-  <header>
-    <div class="container">
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="resources.html">Resources </a></li>
-        </ul>
-      </nav>
+  <header style="padding: 1.5rem 2rem; background: var(--sidebar-bg); color: #fff;">
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+      <a href="index.html" style="font-family: var(--font-main); font-weight: 700; font-size: 1.2rem; color: #fff;">← Back to Home</a>
+      <button id="theme-toggle" class="theme-toggle-btn" title="Toggle Dark Mode" aria-label="Toggle Dark Mode">
+        <i class="fa-solid fa-moon"></i>
+      </button>
     </div>
   </header>
   <div class="container">
@@ -66,7 +63,7 @@
             HintSpark is a modern web app, native desktop app, and PWA for reading and publishing mathematical essays with KaTeX math rendering and a guided Multi-AI Math Assistant (Gemini & Claude).
             <a href="files/math-helper.html">Continue Reading...</a>
           </p>
-          <p class="date">August 4 2026</p>
+          <p class="date"><i class="fa-regular fa-clock"></i> 2 min read &bull; August 4, 2026</p>
         </div>
 
         <div class="blog-post" data-tags="code">
@@ -76,7 +73,7 @@
             So, those who know me closely know I stan for <code>NeoVim</code>.
             <a href="files/nvim.html">Continue Reading...</a>
           </p>
-          <p class="date">September 19 2024</p>
+          <p class="date"><i class="fa-regular fa-clock"></i> 2 min read &bull; September 19, 2024</p>
         </div>
 
         <!-- <div class="blog-post" data-tags="personal"> -->
@@ -97,7 +94,7 @@
             This is gonna be a short post, I'll just recap my 11th 12th grade. <a href="files/hsc.html"> Continue
               Reading...</a>
           </p>
-          <p class="date">Oct 5 2023</p>
+          <p class="date"><i class="fa-regular fa-clock"></i> 1 min read &bull; Oct 5, 2023</p>
         </div>
 
 
