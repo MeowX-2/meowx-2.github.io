@@ -1,0 +1,68 @@
+[
+  {
+    "category": "Math Olympiad (General)",
+    "items": [
+      {
+        "text": "<a href=\"https://artofproblemsolving.com/community/\" target=\"_blank\">AOPS</a> - Advanced problem solving."
+      },
+      {
+        "text": "<a href=\"https://gonitzoggo.com/archive/problems/math\" target=\"_blank\">Gonitzoggo</a> - Bengali math archive."
+      },
+      {
+        "text": "<em>Art and Craft Of Problem Solving</em> by Paul Zeitz."
+      },
+      {
+        "text": "নিউরনে অনুরণন (Neurone Onuronon)."
+      }
+    ]
+  },
+  {
+    "category": "Geometry",
+    "items": [
+      {
+        "text": "<a href=\"uploads/iranlemma.pdf\" target=\"_blank\">Iran Lemma</a> - A note I wrote."
+      },
+      {
+        "text": "Old NCTB Geometry books (2009 or before)."
+      },
+      {
+        "text": "<em>Euclidean Geometry in Mathematical Olympiads</em> by Evan Chen."
+      },
+      {
+        "text": "<em>Geometry Revisited</em>."
+      },
+      {
+        "text": "Notes by <a href=\"https://yufeizhao.com/olympiad/\" target=\"_blank\">Yufei Zhao</a>."
+      }
+    ]
+  },
+  {
+    "category": "Number Theory",
+    "items": [
+      {
+        "text": "<em>Modern Olympiad Number Theory</em> by Aditya Khurmi."
+      },
+      {
+        "text": "<em>104 Number Theory Problems</em>."
+      }
+    ]
+  },
+  {
+    "category": "Combinatorics",
+    "items": [
+      {
+        "text": "<em>Olympiad Combinatorics</em>."
+      },
+      {
+        "text": "<em>Problem Solving Strategies</em> by Arthur Engel."
+      },
+      {
+        "text": "<em>A Path to Combinatorics for Undergraduates</em>."
+      }
+    ]
+  },
+  {
+    "category": "Algebra",
+    "html": "<p>A good way to improve is solving shortlist problems and reading solutions on <a href=\"https://artofproblemsolving.com/community\" target=\"_blank\">AOPS</a>.</p>"
+  }
+]

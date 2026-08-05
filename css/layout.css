@@ -1,0 +1,203 @@
+/* Layout Wrapper */
+.layout-wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Menu Toggle Button (Always Visible) */
+.menu-toggle {
+  display: block;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1100;
+  background: var(--sidebar-bg);
+  color: white;
+  border: none;
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.menu-toggle:hover {
+  background: var(--accent-color);
+}
+
+/* Sidebar Navigation */
+.sidebar {
+  width: var(--sidebar-width);
+  background-color: var(--sidebar-bg);
+  color: #fff;
+  padding: 3rem 2rem;
+  padding-top: 5rem; /* Space for toggle button */
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(0); /* Visible by default on desktop */
+}
+
+/* Collapsed State (Desktop) */
+.sidebar.collapsed {
+  transform: translateX(-100%);
+}
+
+.sidebar-header h1 {
+  font-size: 1.8rem !important; /* Force constant size */
+  margin-bottom: 0.2rem;
+  color: #fff; /* Always white in sidebar */
+  line-height: 1.2;
+}
+
+.sidebar-header .subtitle {
+  color: #a2a8d3;
+  font-size: 0.9rem !important; /* Force constant size */
+  margin-top: 0;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.nav-links li {
+  margin-bottom: 1rem;
+}
+
+.nav-link {
+  display: block;
+  font-family: var(--font-main);
+  font-weight: 500;
+  color: #a2a8d3;
+  padding: 0.5rem 0;
+  position: relative;
+  font-size: 1.1rem !important; /* Force constant size */
+  line-height: 1.5;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #fff;
+  padding-left: 10px;
+}
+
+.nav-link.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+
+.sidebar-footer .social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-icons a {
+  color: #a2a8d3;
+  font-size: 1.2rem !important; /* Force constant size */
+}
+
+.social-icons a:hover {
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #a2a8d3;
+  font-size: 1.2rem;
+  padding: 0;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.theme-toggle-btn:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.copyright {
+  font-size: 0.75rem;
+  color: #636e72;
+  opacity: 0.5;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: var(--sidebar-width); /* Default desktop margin */
+  flex: 1;
+  padding: 4rem 5rem;
+  max-width: 1200px;
+  transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Expanded Content (when sidebar collapsed) */
+.main-content.expanded {
+  margin-left: 0;
+  max-width: 100%; /* Use full width */
+  padding: 4rem 10%; /* Center content visually with padding */
+}
+
+/* Mobile Responsive */
+.mobile-footer {
+  display: none;
+  text-align: center;
+  margin-top: 3rem;
+  color: var(--text-secondary);
+}
+
+/* Media Query for Mobile/Tablet */
+@media (max-width: 900px) {
+  .sidebar {
+    transform: translateX(-100%); /* Hidden by default on mobile */
+    width: 260px;
+    padding-top: 5rem;
+  }
+  
+  .sidebar.active {
+    transform: translateX(0); /* Active class shows it on mobile */
+  }
+  
+  .sidebar.collapsed {
+    transform: translateX(-100%); /* Ensure collapsed class also hides it */
+  }
+
+  .main-content {
+    margin-left: 0 !important; /* Always 0 on mobile */
+    padding: 5rem 1.5rem;
+  }
+
+  .sidebar.active::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 260px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+  }
+  
+  .mobile-footer {
+    display: block;
+  }
+}

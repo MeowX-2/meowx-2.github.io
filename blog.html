@@ -12,8 +12,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+
+  <script src="js/theme.js" defer></script>
+  <script src="js/navigation.js" defer></script>
+  <script src="js/blog.js" defer></script>
+  <script src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -26,89 +31,23 @@
       </button>
     </div>
   </header>
-  <div class="container">
 
-    <section id="blog" class="section-blog">
-      <div class="container">
-        <h2>Blog</h2>
-        <div class="tags">
+  <div class="main-content" style="margin-left: 0; max-width: 1100px; margin-inline: auto; padding-top: 2rem;">
+    <section id="blog" class="section">
+      <h2 class="section-title">Blog</h2>
 
-          <a href="#" class="tag" data-tag="code">Code</a>
-          <a href="#" class="tag" data-tag="math">Math</a>
-          <a href="#" class="tag" data-tag="personal">Personal</a>
-        </div>
-
-        <!-- <div class="blog-post" data-tags="personal"> -->
-        <!--   <h3><a href="art/jan2025.html">New year, new arts!</a></h3> -->
-        <!--   <div class="blog-type">Personal</div> -->
-        <!--   <p> -->
-        <!--     <p>I am just trying to maintain the streak. Here are the arts that I have made in last month!</p> -->
-        <!--     <a href="art/jan2025.html">Continue Reading...</a> -->
-        <!--   <p class="date">5 February 2025</p> -->
-        <!-- </div> -->
-        <!---->
-        <!-- <div class="blog-post" data-tags="math" data-tags="pdf"> -->
-        <!--   <h3><a href="uploads/groupt/group-theory.pdf">Group Theory Handout</a></h3> -->
-        <!--   <div class="blog-type">Math</div> -->
-        <!--   <div class="blog-type">PDF</div> -->
-        <!--   <p> -->
-        <!--       Basically started to learn group theory. More contents will be added later as I extend the note.  -->
-        <!--     <a href="uploads/groupt/group-theory.pdf">Continue Reading...</a> -->
-        <!--   <p class="date">November 25 2024</p> -->
-        <!-- </div> -->
-        <div class="blog-post" data-tags="code">
-          <h3><a href="post.html?file=math-helper">HintSpark — Mathematical Insights & Multi-AI Math Assistant</a></h3>
-          <div class="blog-type">Code</div>
-          <p>
-            HintSpark is a modern web app, native desktop app, and PWA for reading and publishing mathematical essays with KaTeX math rendering and a guided Multi-AI Math Assistant (Gemini & Claude).
-            <a href="post.html?file=math-helper">Continue Reading...</a>
-          </p>
-          <p class="date"><i class="fa-regular fa-clock"></i> 2 min read &bull; August 4, 2026</p>
-        </div>
-
-        <div class="blog-post" data-tags="code">
-          <h3><a href="post.html?file=nvim">NeoVim & Random Coding Setups With It</a></h3>
-          <div class="blog-type">Code</div>
-          <p>
-            So, those who know me closely know I stan for <code>NeoVim</code>.
-            <a href="post.html?file=nvim">Continue Reading...</a>
-          </p>
-          <p class="date"><i class="fa-regular fa-clock"></i> 2 min read &bull; September 19, 2024</p>
-        </div>
-
-        <div class="blog-post" data-tags="personal">
-          <h3><a href="post.html?file=embroidery">Some takeaways from a piece</a></h3>
-          <div class="blog-type">Personal</div>
-          <p>
-           I did some sewing stuff while I was in middle school, for my schoolwork. <a href="post.html?file=embroidery">Continue Reading...</a>
-          </p>
-          <p class="date"><i class="fa-regular fa-clock"></i> 1 min read &bull; May 24, 2024</p>
-        </div>
-
-        <div class="blog-post" data-tags="personal">
-          <h3><a href="post.html?file=hsc">So HSC is over 🤔</a></h3>
-          <div class="blog-type">Personal</div>
-          <p>
-            This is gonna be a short post, I'll just recap my 11th 12th grade. <a href="post.html?file=hsc">Continue Reading...</a>
-          </p>
-          <p class="date"><i class="fa-regular fa-clock"></i> 1 min read &bull; Oct 5, 2023</p>
-        </div>
-
-        <div class="blog-post" data-tags="personal">
-          <h3><a href="post.html?file=reflection">Reflection</a></h3>
-          <div class="blog-type">Personal</div>
-          <p>
-            I am to write about the most significant period of my life; my Math Olympiad Journey has had a lot of ups
-            and downs. <a href="post.html?file=reflection">Continue Reading...</a>
-          </p>
-          <p class="date"><i class="fa-regular fa-clock"></i> 6 min read &bull; May 16, 2023</p>
-        </div>
-
-        <!-- Add more blog posts as needed -->
-
+      <div class="tags-container">
+        <span class="tag-label">Filter by:</span>
+        <a href="#" class="tag active" data-tag="all">All</a>
+        <a href="#" class="tag" data-tag="code">Code</a>
+        <a href="#" class="tag" data-tag="math">Math</a>
+        <a href="#" class="tag" data-tag="personal">Personal</a>
       </div>
+
+      <!-- Blog Cards Container (Loaded dynamically from posts/posts.json) -->
+      <div class="grid-container" id="blog-grid"></div>
     </section>
   </div>
-</body>
 
+</body>
 </html>

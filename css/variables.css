@@ -1,0 +1,51 @@
+:root {
+  --bg-color: #f8f9fa;
+  --sidebar-bg: #1a1c29;
+  --heading-color: #1a1c29; /* Dark for Light Mode */
+  --text-primary: #2d3436;
+  --text-secondary: #636e72;
+  --accent-color: #6c5ce7;
+  --accent-hover: #5649c0;
+  --card-bg: #ffffff;
+  --sidebar-width: 280px;
+  --font-main: 'Montserrat', sans-serif;
+  --font-body: 'Lato', sans-serif;
+}
+
+[data-theme="dark"] {
+  --bg-color: #0f111a;
+  --sidebar-bg: #050505; /* Darker black */
+  --heading-color: #f0f2f5; /* Light for Dark Mode */
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --accent-color: #8c7ae6;
+  --accent-hover: #9c88ff;
+  --card-bg: #1e212b; /* Slightly lighter card for contrast */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  line-height: 1.7;
+  overflow-x: hidden; /* Prevent horizontal scroll when sidebar slides */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-main);
+  margin-top: 0;
+  color: var(--heading-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}

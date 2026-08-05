@@ -23,7 +23,11 @@
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+
+  <script src="js/theme.js" defer></script>
+  <script src="js/navigation.js" defer></script>
+  <script src="js/post.js" defer></script>
+  <script src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -93,79 +97,5 @@
     </main>
   </div>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const urlParams = new URLSearchParams(window.location.search);
-      let rawPostName = urlParams.get('file') || urlParams.get('post') || 'math-helper';
-      const cleanPostName = rawPostName.replace(/\.md$/i, '');
-      const mdFilePath = `posts/${cleanPostName}.md`;
-      
-      fetch(mdFilePath)
-        .then(response => {
-          if (!response.ok) {
-            throw new Error(`HTTP error ${response.status}`);
-          }
-          return response.text();
-        })
-        .then(text => {
-          renderMarkdownPost(text);
-        })
-        .catch(err => {
-          document.getElementById('post-title').textContent = "Post Not Found";
-          document.getElementById('post-body').innerHTML = "<p>Sorry, the requested Markdown blog post could not be found.</p><br><a href='index.html#blog' class='cta-button'>Return to Blog</a>";
-        });
-    });
-
-    function renderMarkdownPost(rawText) {
-      let title = "Blog Post";
-      let date = "Recent";
-      let tag = "Blog";
-      let content = rawText;
-
-      // Extract Frontmatter (--- ... ---)
-      const frontmatterMatch = rawText.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
-      if (frontmatterMatch) {
-        const frontmatter = frontmatterMatch[1];
-        content = frontmatterMatch[2];
-
-        frontmatter.split('\n').forEach(line => {
-          const [key, ...valueParts] = line.split(':');
-          if (key && valueParts.length > 0) {
-            const value = valueParts.join(':').trim();
-            if (key.trim() === 'title') title = value;
-            if (key.trim() === 'date') date = value;
-            if (key.trim() === 'tag') tag = value;
-          }
-        });
-      }
-
-      // Calculate Reading Time (words / 200)
-      const wordCount = content.trim().split(/\s+/).length;
-      const readTimeMinutes = Math.max(1, Math.ceil(wordCount / 200));
-
-      // Update DOM
-      document.title = `${title} — Arifa Alam`;
-      document.getElementById('post-title').textContent = title;
-      document.getElementById('post-date').innerHTML = `<i class="fa-regular fa-calendar"></i> ${date}`;
-      document.getElementById('post-readtime').innerHTML = `<i class="fa-regular fa-clock"></i> ${readTimeMinutes} min read`;
-      document.getElementById('post-tag').textContent = tag;
-
-      // Parse Markdown
-      document.getElementById('post-body').innerHTML = marked.parse(content);
-
-      // Render KaTeX Math
-      if (typeof renderMathInElement !== 'undefined') {
-        renderMathInElement(document.body, {
-          delimiters: [
-            { left: "$$", right: "$$", display: true },
-            { left: "\\[", right: "\\]", display: true },
-            { left: "$", right: "$", display: false },
-            { left: "\\(", right: "\\)", display: false },
-          ],
-          throwOnError: false
-        });
-      }
-    }
-  </script>
 </body>
 </html>

@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Personal Portfolio",
+    "type": "Web",
+    "description": "A minimal, responsive portfolio website built with HTML, CSS, and vanilla JavaScript. Features dark mode, animations, and a clean layout.",
+    "links": [
+      {
+        "text": "View Source",
+        "url": "https://github.com/meowx-2/meowx-2.github.io",
+        "icon": "fa-brands fa-github",
+        "external": true
+      }
+    ]
+  },
+  {
+    "title": "NeoVim Config",
+    "type": "Config",
+    "description": "My personal NeoVim configuration featuring LSP, Treesitter, and a custom theme for an optimized development workflow.",
+    "links": [
+      {
+        "text": "View Config",
+        "url": "https://github.com/meowx-2/nvim",
+        "icon": "fa-brands fa-github",
+        "external": true
+      }
+    ]
+  },
+  {
+    "title": "HintSpark (Math Helper)",
+    "type": "Web & App",
+    "description": "A modern web app, desktop app, and PWA for publishing mathematical essays with KaTeX rendering and a guided Multi-AI Math Assistant (Gemini & Claude).",
+    "links": [
+      {
+        "text": "View Source",
+        "url": "https://github.com/MeowX-2/math-helper",
+        "icon": "fa-brands fa-github",
+        "external": true
+      },
+      {
+        "text": "Learn More",
+        "url": "post.html?file=math-helper",
+        "icon": "fa-solid fa-arrow-right",
+        "external": false
+      }
+    ]
+  }
+]

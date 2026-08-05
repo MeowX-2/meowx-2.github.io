@@ -1,0 +1,62 @@
+[
+  {
+    "title": "EGMO",
+    "url": "https://www.egmo.org/people/person1804/",
+    "icon": "fa-solid fa-medal"
+  },
+  {
+    "title": "Codeforces",
+    "url": "https://codeforces.com/profile/ohagainpls",
+    "icon": "fa-solid fa-chart-simple"
+  },
+  {
+    "title": "AtCoder",
+    "url": "https://atcoder.jp/users/MeowX2",
+    "icon": "fa-solid fa-trophy"
+  },
+  {
+    "title": "GitHub",
+    "url": "https://github.com/meowx-2",
+    "icon": "fa-brands fa-github"
+  },
+  {
+    "title": "LinkedIn",
+    "url": "https://linkedin.com/in/meowx",
+    "icon": "fa-brands fa-linkedin"
+  },
+  {
+    "title": "CV",
+    "url": "uploads/CV/cv.pdf",
+    "icon": "fa-solid fa-file-pdf"
+  },
+  {
+    "title": "ORCID",
+    "url": "https://orcid.org/0009-0003-9246-3159",
+    "icon": "fa-brands fa-orcid"
+  },
+  {
+    "title": "Email",
+    "url": "mailto:alamarifa9@gmail.com",
+    "icon": "fa-solid fa-envelope"
+  },
+  {
+    "title": "Substack",
+    "url": "https://substack.com/@meowx2?utm_source=user-menu",
+    "icon": "fa-solid fa-bookmark"
+  },
+  {
+    "title": "Chess.com",
+    "url": "https://www.chess.com/member/meowx_2",
+    "icon": "fa-solid fa-chess-pawn"
+  },
+  {
+    "title": "Duolingo",
+    "url": "https://www.duolingo.com/profile/are.if.a",
+    "icon": "fa-solid fa-language"
+  },
+  {
+    "title": "Spotify",
+    "url": "https://open.spotify.com/user/31pftyuhd7fie4pverpmonsvrl64",
+    "icon": "fa-brands fa-spotify"
+  }
+]
