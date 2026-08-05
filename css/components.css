@@ -382,6 +382,26 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
+.article-content a,
+.card-body a,
+.content-block a,
+.resource-card a {
+  color: var(--accent-color);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(108, 92, 231, 0.4);
+  text-underline-offset: 3px;
+  transition: all 0.2s ease;
+}
+
+.article-content a:hover,
+.card-body a:hover,
+.content-block a:hover,
+.resource-card a:hover {
+  color: var(--accent-hover);
+  text-decoration-color: var(--accent-hover);
+}
+
 .blog-image {
   max-width: 100%;
   height: auto;
