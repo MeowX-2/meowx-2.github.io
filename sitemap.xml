@@ -13,19 +13,23 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://meowx-2.github.io/files/math-helper.html</loc>
+    <loc>https://meowx-2.github.io/post.html?file=math-helper</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://meowx-2.github.io/files/nvim.html</loc>
+    <loc>https://meowx-2.github.io/post.html?file=nvim</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://meowx-2.github.io/files/hsc.html</loc>
+    <loc>https://meowx-2.github.io/post.html?file=embroidery</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://meowx-2.github.io/post.html?file=hsc</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://meowx-2.github.io/files/reflection.html</loc>
+    <loc>https://meowx-2.github.io/post.html?file=reflection</loc>
     <priority>0.6</priority>
   </url>
 </urlset>
