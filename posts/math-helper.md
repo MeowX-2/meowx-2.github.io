@@ -21,28 +21,4 @@ Unlike standard AI search engines or chatbots that immediately output full solut
 - **Community Publishing:** Publish mathematical stories with automatic read-time and LaTeX complexity estimation.
 - **Cross-Platform Deployment:** Run as a Flask web app, native desktop app via `pywebview`, or Android PWA.
 
-### Tech Stack
-
-- **Backend:** Python 3.8+, Flask, `google-generativeai`, `python-dotenv`, `pywebview`
-- **Frontend:** HTML5, CSS3 (Design tokens), JavaScript (ES6+), `marked.js`, KaTeX
-- **Supported AI Providers:** Google Gemini API, Anthropic Claude API
-
-### Getting Started & Running Locally
-
-Clone the repository and install requirements to get started locally:
-
-```bash
-# Clone repository
-git clone https://github.com/MeowX-2/math-helper.git
-cd math-helper
-
-# Set up virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: .\venv\Scripts\Activate.ps1
-
-# Install dependencies & run app
-pip install -r requirements.txt
-python app.py
-```
-
 Check out the live repository and contribute on [GitHub](https://github.com/MeowX-2/math-helper).
