@@ -131,6 +131,9 @@ function loadDynamicBlogGrid() {
     .then((posts) => {
       if (!Array.isArray(posts) || posts.length === 0) return;
 
+      // Sort posts in descending date order (newest first)
+      posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+
       // Clear existing hardcoded grid cards
       blogGrid.innerHTML = "";
 
