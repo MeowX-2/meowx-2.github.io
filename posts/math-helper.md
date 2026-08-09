@@ -1,5 +1,5 @@
 ---
-title: One of the projects that I am proud of 
+title: HintSpark — Multi-AI Math Assistant
 date: August 4, 2026
 tag: Code
 ---
