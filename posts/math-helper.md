@@ -1,11 +1,17 @@
 ---
-title: HintSpark — Mathematical Insights & Multi-AI Math Assistant
+title: One of the projects that I am proud of 
 date: August 4, 2026
 tag: Code
 ---
 
-**HintSpark** (Math Helper) is a modern, responsive web application, native desktop application, and Android-installable PWA designed for reading and publishing mathematical essays, complete with KaTeX expression rendering and an interactive **Multi-AI Math Assistant** powered by `Google Gemini` and `Anthropic Claude`.
-The complete source code is available on [GitHub](https://github.com/MeowX-2/math-helper).
+
+**HintSpark** (Math Helper) is a modern, responsive web application, native desktop application, and Android-installable PWA designed for reading and organizing mathematical essays, complete with KaTeX expression rendering and an interactive **Multi-AI Math Assistant** which uses `Google Gemini` and `Anthropic Claude` API.
+The complete source code is available on [GitHub](https://github.com/MeowX-2/math-helper). The whole app was designed with python. And it is mainly designed for maths/physics students.
+
+### Why?
+I didn't like how AI throws a random answer that is overly verbose and have many "out of sense" answers. So I have made an app which will make AI to help with math problems and not just giving away the "copy-paste-ready" solution. I also added some note-writing feature which generates new note(and saves them in the app), which support latex and markdown. Moreover, the AI is text based and follows the bring-your-own-key framework.
+
+I tried to keep it not so resource heavy, and not too busy for the eye. Next, I will probably integrate wikipedia support for the app.
 
 ### Guided Math Tutor Concept
 
@@ -21,4 +27,4 @@ Unlike standard AI search engines or chatbots that immediately output full solut
 - **Community Publishing:** Publish mathematical stories with automatic read-time and LaTeX complexity estimation.
 - **Cross-Platform Deployment:** Run as a Flask web app, native desktop app via `pywebview`, or Android PWA.
 
-Check out the live repository and contribute on [GitHub](https://github.com/MeowX-2/math-helper).
+Check out the live repository and contribute on [GitHub](https://github.com/MeowX-2/math-helper). Any suggestions are welcome.  
