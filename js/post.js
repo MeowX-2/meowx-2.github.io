@@ -67,15 +67,30 @@ function renderMarkdownPost(rawText) {
   if (readtimeEl) readtimeEl.innerHTML = `<i class="fa-regular fa-clock"></i> ${readTimeMinutes} min read`;
   if (tagEl) tagEl.textContent = tag;
 
+  // Protect KaTeX math syntax ($$...$$, \[...\], $...$, \(...\)) from marked parser
+  const mathBlocks = [];
+  const mathRegex = /(\$\$[\s\S]*?\$\$|\\\[[\s\S]*?\\\]|(?<!\\)\$([^\$\n]+?)(?<!\\)\$|\\\([\s\S]*?\\\))/g;
+
+  const processedContent = content.replace(mathRegex, (match) => {
+    const token = `%%%MATH_BLOCK_${mathBlocks.length}%%%`;
+    mathBlocks.push(match);
+    return token;
+  });
+
   if (bodyEl && typeof marked !== 'undefined') {
-    bodyEl.innerHTML = marked.parse(content);
+    let parsedHtml = marked.parse(processedContent);
+    // Restore preserved raw LaTeX strings
+    mathBlocks.forEach((mathStr, index) => {
+      parsedHtml = parsedHtml.replace(`%%%MATH_BLOCK_${index}%%%`, mathStr);
+    });
+    bodyEl.innerHTML = parsedHtml;
   } else if (bodyEl) {
     bodyEl.textContent = content;
   }
 
   // Render KaTeX Math
-  if (typeof renderMathInElement !== 'undefined') {
-    renderMathInElement(document.body, {
+  if (typeof renderMathInElement !== 'undefined' && bodyEl) {
+    renderMathInElement(bodyEl, {
       delimiters: [
         { left: "$$", right: "$$", display: true },
         { left: "\\[", right: "\\]", display: true },

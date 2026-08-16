@@ -4,8 +4,8 @@
     "title": "HintSpark — Multi-AI Math Assistant",
     "summary": "HintSpark is a guided math tutor and essay platform powered by Google Gemini & Anthropic Claude APIs with KaTeX math rendering and cross-platform support.",
     "date": "Aug 4, 2026",
-    "tag": "code",
-    "tagLabel": "Code"
+    "tag": "code math",
+    "tagLabel": "Code & Math"
   },
   {
     "file": "nvim",

@@ -331,6 +331,10 @@
   margin-bottom: 2rem;
 }
 
+[data-theme="dark"] .article-header {
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
 .article-title {
   font-size: 2.2rem;
   color: var(--heading-color);
@@ -350,8 +354,9 @@
 }
 
 .article-content {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: var(--text-primary);
+  line-height: 1.8;
 }
 
 .article-content p {
@@ -360,19 +365,118 @@
 
 .article-content h1, 
 .article-content h2, 
-.article-content h3 {
+.article-content h3,
+.article-content h4 {
   color: var(--heading-color);
-  margin-top: 2.5rem;
+  margin-top: 2.2rem;
   margin-bottom: 1rem;
+  font-family: var(--font-main);
+  line-height: 1.3;
 }
 
+.article-content h2 {
+  font-size: 1.6rem;
+  border-bottom: 2px solid rgba(0,0,0,0.05);
+  padding-bottom: 0.4rem;
+}
+
+[data-theme="dark"] .article-content h2 {
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+.article-content h3 {
+  font-size: 1.3rem;
+}
+
+/* Bullet & Numbered Lists */
+.article-content ul,
+.article-content ol {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1.8rem;
+}
+
+.article-content li {
+  margin-bottom: 0.6rem;
+  line-height: 1.7;
+}
+
+.article-content li strong {
+  color: var(--heading-color);
+}
+
+/* Inline Code & Code Blocks */
+.article-content code {
+  font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
+  font-size: 0.9em;
+  background-color: rgba(108, 92, 231, 0.08);
+  color: var(--accent-color);
+  padding: 0.2rem 0.45rem;
+  border-radius: 6px;
+}
+
+[data-theme="dark"] .article-content code {
+  background-color: rgba(140, 122, 230, 0.15);
+  color: #a29bfe;
+}
+
+.article-content pre {
+  background-color: #1a1c29;
+  color: #f8f9fa;
+  padding: 1.25rem;
+  border-radius: 10px;
+  overflow-x: auto;
+  margin: 1.8rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.article-content pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  font-size: 0.92rem;
+  border-radius: 0;
+}
+
+/* KaTeX Math Container Responsive Styling */
+.article-content .katex-display {
+  margin: 1.8rem 0;
+  padding: 0.8rem 1rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background-color: rgba(108, 92, 231, 0.03);
+  border-left: 3px solid var(--accent-color);
+  border-radius: 0 8px 8px 0;
+}
+
+[data-theme="dark"] .article-content .katex-display {
+  background-color: rgba(140, 122, 230, 0.06);
+}
+
+.article-content .katex {
+  font-size: 1.1em;
+}
+
+/* Blockquote & Dividers */
 .article-content blockquote {
-  color: var(--text-primary);
+  color: var(--text-secondary);
   border-left: 4px solid var(--accent-color);
-  margin: 1.5rem 0;
-  padding-left: 1rem;
+  background: rgba(108, 92, 231, 0.03);
+  margin: 1.8rem 0;
+  padding: 1rem 1.2rem;
+  border-radius: 0 8px 8px 0;
   font-style: italic;
-  opacity: 0.9;
+}
+
+.article-content hr {
+  border: 0;
+  height: 1px;
+  background: #e1e2e6;
+  margin: 2.5rem 0;
+}
+
+[data-theme="dark"] .article-content hr {
+  background: #2d3436;
 }
 
 .article-content img {
