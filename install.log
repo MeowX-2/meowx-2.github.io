@@ -1,0 +1,10 @@
+[19:17:46 2026-09-07] FETCHING Version 2.44.0
+[19:17:46 2026-09-07] DOWNLOADING https://github.com/spicetify/cli/releases/download/v2.44.0/spicetify-2.44.0-linux-amd64.tar.gz
+[19:17:53 2026-09-07] EXTRACTING /home/meowx2/.spicetify/spicetify.tar.gz
+[19:17:53 2026-09-07] SETTING EXECUTABLE PERMISSIONS TO /home/meowx2/.spicetify/spicetify
+[19:17:53 2026-09-07] REMOVING /home/meowx2/.spicetify/spicetify.tar.gz
+[19:17:53 2026-09-07] APPENDING /home/meowx2/.spicetify to PATH in /home/meowx2/.config/fish/config.fish
+[19:17:53 2026-09-07] spicetify v2.44.0 was installed successfully to /home/meowx2/.spicetify
+[19:17:53 2026-09-07] Open a new terminal or reload your shell profile to use spicetify:
+[19:17:53 2026-09-07]   source "/home/meowx2/.config/fish/config.fish"
+[19:17:53 2026-09-07] Then run 'spicetify --help' to get started
